@@ -87,7 +87,7 @@
             this.GBPlayers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GBPlayers.Name = "GBPlayers";
             this.GBPlayers.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GBPlayers.Size = new System.Drawing.Size(973, 509);
+            this.GBPlayers.Size = new System.Drawing.Size(516, 478);
             this.GBPlayers.TabIndex = 0;
             this.GBPlayers.TabStop = false;
             this.GBPlayers.Text = "Players";
@@ -96,7 +96,7 @@
             // 
             this.BtnPlayer15.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer15.Image")));
             this.BtnPlayer15.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer15.Location = new System.Drawing.Point(17, 142);
+            this.BtnPlayer15.Location = new System.Drawing.Point(371, 347);
             this.BtnPlayer15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer15.Name = "BtnPlayer15";
             this.BtnPlayer15.Size = new System.Drawing.Size(120, 111);
@@ -110,7 +110,7 @@
             // 
             this.BtnPlayer14.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer14.Image")));
             this.BtnPlayer14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer14.Location = new System.Drawing.Point(17, 260);
+            this.BtnPlayer14.Location = new System.Drawing.Point(253, 347);
             this.BtnPlayer14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer14.Name = "BtnPlayer14";
             this.BtnPlayer14.Size = new System.Drawing.Size(120, 111);
@@ -124,7 +124,7 @@
             // 
             this.BtnPlayer13.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer13.Image")));
             this.BtnPlayer13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer13.Location = new System.Drawing.Point(107, 379);
+            this.BtnPlayer13.Location = new System.Drawing.Point(136, 347);
             this.BtnPlayer13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer13.Name = "BtnPlayer13";
             this.BtnPlayer13.Size = new System.Drawing.Size(120, 111);
@@ -138,7 +138,7 @@
             // 
             this.BtnPlayer12.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer12.Image")));
             this.BtnPlayer12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer12.Location = new System.Drawing.Point(235, 379);
+            this.BtnPlayer12.Location = new System.Drawing.Point(20, 347);
             this.BtnPlayer12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer12.Name = "BtnPlayer12";
             this.BtnPlayer12.Size = new System.Drawing.Size(120, 111);
@@ -152,7 +152,7 @@
             // 
             this.BtnPlayer11.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer11.Image")));
             this.BtnPlayer11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer11.Location = new System.Drawing.Point(363, 379);
+            this.BtnPlayer11.Location = new System.Drawing.Point(371, 239);
             this.BtnPlayer11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer11.Name = "BtnPlayer11";
             this.BtnPlayer11.Size = new System.Drawing.Size(120, 111);
@@ -166,7 +166,7 @@
             // 
             this.BtnPlayer10.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer10.Image")));
             this.BtnPlayer10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer10.Location = new System.Drawing.Point(491, 379);
+            this.BtnPlayer10.Location = new System.Drawing.Point(253, 239);
             this.BtnPlayer10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer10.Name = "BtnPlayer10";
             this.BtnPlayer10.Size = new System.Drawing.Size(120, 111);
@@ -180,7 +180,7 @@
             // 
             this.BtnPlayer9.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer9.Image")));
             this.BtnPlayer9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer9.Location = new System.Drawing.Point(619, 380);
+            this.BtnPlayer9.Location = new System.Drawing.Point(136, 239);
             this.BtnPlayer9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer9.Name = "BtnPlayer9";
             this.BtnPlayer9.Size = new System.Drawing.Size(120, 111);
@@ -194,7 +194,7 @@
             // 
             this.BtnPlayer8.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer8.Image")));
             this.BtnPlayer8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer8.Location = new System.Drawing.Point(747, 380);
+            this.BtnPlayer8.Location = new System.Drawing.Point(20, 239);
             this.BtnPlayer8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer8.Name = "BtnPlayer8";
             this.BtnPlayer8.Size = new System.Drawing.Size(120, 111);
@@ -208,7 +208,7 @@
             // 
             this.BtnPlayer7.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer7.Image")));
             this.BtnPlayer7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer7.Location = new System.Drawing.Point(836, 261);
+            this.BtnPlayer7.Location = new System.Drawing.Point(371, 130);
             this.BtnPlayer7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer7.Name = "BtnPlayer7";
             this.BtnPlayer7.Size = new System.Drawing.Size(120, 111);
@@ -222,7 +222,7 @@
             // 
             this.BtnPlayer6.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer6.Image")));
             this.BtnPlayer6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer6.Location = new System.Drawing.Point(836, 142);
+            this.BtnPlayer6.Location = new System.Drawing.Point(253, 130);
             this.BtnPlayer6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer6.Name = "BtnPlayer6";
             this.BtnPlayer6.Size = new System.Drawing.Size(120, 111);
@@ -236,7 +236,7 @@
             // 
             this.BtnPlayer5.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer5.Image")));
             this.BtnPlayer5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer5.Location = new System.Drawing.Point(747, 23);
+            this.BtnPlayer5.Location = new System.Drawing.Point(136, 130);
             this.BtnPlayer5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer5.Name = "BtnPlayer5";
             this.BtnPlayer5.Size = new System.Drawing.Size(120, 111);
@@ -250,7 +250,7 @@
             // 
             this.BtnPlayer4.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer4.Image")));
             this.BtnPlayer4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer4.Location = new System.Drawing.Point(619, 23);
+            this.BtnPlayer4.Location = new System.Drawing.Point(20, 130);
             this.BtnPlayer4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer4.Name = "BtnPlayer4";
             this.BtnPlayer4.Size = new System.Drawing.Size(120, 111);
@@ -264,7 +264,7 @@
             // 
             this.BtnPlayer3.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer3.Image")));
             this.BtnPlayer3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer3.Location = new System.Drawing.Point(491, 23);
+            this.BtnPlayer3.Location = new System.Drawing.Point(371, 23);
             this.BtnPlayer3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer3.Name = "BtnPlayer3";
             this.BtnPlayer3.Size = new System.Drawing.Size(120, 111);
@@ -278,7 +278,7 @@
             // 
             this.BtnPlayer2.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer2.Image")));
             this.BtnPlayer2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer2.Location = new System.Drawing.Point(363, 23);
+            this.BtnPlayer2.Location = new System.Drawing.Point(253, 23);
             this.BtnPlayer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer2.Name = "BtnPlayer2";
             this.BtnPlayer2.Size = new System.Drawing.Size(120, 111);
@@ -292,7 +292,7 @@
             // 
             this.BtnPlayer1.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer1.Image")));
             this.BtnPlayer1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer1.Location = new System.Drawing.Point(235, 23);
+            this.BtnPlayer1.Location = new System.Drawing.Point(136, 23);
             this.BtnPlayer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer1.Name = "BtnPlayer1";
             this.BtnPlayer1.Size = new System.Drawing.Size(120, 111);
@@ -306,7 +306,7 @@
             // 
             this.BtnPlayer0.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer0.Image")));
             this.BtnPlayer0.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPlayer0.Location = new System.Drawing.Point(107, 23);
+            this.BtnPlayer0.Location = new System.Drawing.Point(20, 23);
             this.BtnPlayer0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnPlayer0.Name = "BtnPlayer0";
             this.BtnPlayer0.Size = new System.Drawing.Size(120, 111);
@@ -320,11 +320,11 @@
             // 
             this.GBChat.Controls.Add(this.TbChatInput);
             this.GBChat.Controls.Add(this.TbChatBox);
-            this.GBChat.Location = new System.Drawing.Point(16, 532);
+            this.GBChat.Location = new System.Drawing.Point(551, 15);
             this.GBChat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GBChat.Name = "GBChat";
             this.GBChat.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GBChat.Size = new System.Drawing.Size(611, 211);
+            this.GBChat.Size = new System.Drawing.Size(500, 586);
             this.GBChat.TabIndex = 2;
             this.GBChat.TabStop = false;
             this.GBChat.Text = "Chat";
@@ -332,10 +332,10 @@
             // TbChatInput
             // 
             this.TbChatInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbChatInput.Location = new System.Drawing.Point(20, 173);
+            this.TbChatInput.Location = new System.Drawing.Point(20, 533);
             this.TbChatInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TbChatInput.Name = "TbChatInput";
-            this.TbChatInput.Size = new System.Drawing.Size(574, 30);
+            this.TbChatInput.Size = new System.Drawing.Size(471, 30);
             this.TbChatInput.TabIndex = 1;
             this.TbChatInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbChatInput_Enter);
             // 
@@ -347,7 +347,7 @@
             this.TbChatBox.Multiline = true;
             this.TbChatBox.Name = "TbChatBox";
             this.TbChatBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TbChatBox.Size = new System.Drawing.Size(574, 142);
+            this.TbChatBox.Size = new System.Drawing.Size(471, 501);
             this.TbChatBox.TabIndex = 0;
             // 
             // GBAction
@@ -355,18 +355,18 @@
             this.GBAction.Controls.Add(this.BtnJoin);
             this.GBAction.Controls.Add(this.BtnAction);
             this.GBAction.Controls.Add(this.BtnVote);
-            this.GBAction.Location = new System.Drawing.Point(997, 192);
+            this.GBAction.Location = new System.Drawing.Point(16, 500);
             this.GBAction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GBAction.Name = "GBAction";
             this.GBAction.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GBAction.Size = new System.Drawing.Size(152, 223);
+            this.GBAction.Size = new System.Drawing.Size(356, 101);
             this.GBAction.TabIndex = 3;
             this.GBAction.TabStop = false;
             this.GBAction.Text = "Action";
             // 
             // BtnJoin
             // 
-            this.BtnJoin.Location = new System.Drawing.Point(24, 153);
+            this.BtnJoin.Location = new System.Drawing.Point(240, 23);
             this.BtnJoin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnJoin.Name = "BtnJoin";
             this.BtnJoin.Size = new System.Drawing.Size(100, 57);
@@ -377,7 +377,7 @@
             // 
             // BtnAction
             // 
-            this.BtnAction.Location = new System.Drawing.Point(24, 88);
+            this.BtnAction.Location = new System.Drawing.Point(132, 23);
             this.BtnAction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnAction.Name = "BtnAction";
             this.BtnAction.Size = new System.Drawing.Size(100, 57);
@@ -404,7 +404,7 @@
             this.GBStatus.Controls.Add(this.LBPeriod);
             this.GBStatus.Controls.Add(this.label2);
             this.GBStatus.Controls.Add(this.label1);
-            this.GBStatus.Location = new System.Drawing.Point(997, 423);
+            this.GBStatus.Location = new System.Drawing.Point(380, 500);
             this.GBStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GBStatus.Name = "GBStatus";
             this.GBStatus.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -467,7 +467,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1162, 759);
+            this.ClientSize = new System.Drawing.Size(1067, 625);
             this.Controls.Add(this.GBStatus);
             this.Controls.Add(this.GBAction);
             this.Controls.Add(this.GBChat);
