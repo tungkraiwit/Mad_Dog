@@ -162,7 +162,7 @@ namespace WerewolfClient
                         }
                         break;
                     case EventEnum.GameStopped:// end game Here
-                        AddChatMessage("Game is finished, outcome is " + wm.EventPayloads["Game.Outcome"]);
+                        AddChatMessage("Game is finished, outcome is " + wm.EventPayloads["Game.Outcome" + "\n" + "--------------------------------------------------------------"]);
                       
                         EnableButton(BtnAction, false);
                         EnableButton(BtnVote, false);
@@ -172,7 +172,7 @@ namespace WerewolfClient
                     case EventEnum.GameStarted:
                         players = wm.Players;
                         _myRole = wm.EventPayloads["Player.Role.Name"];
-                        AddChatMessage("Your role is " + _myRole + ".");
+                        AddChatMessage("--------------------------------------------------------------" + "\n" + "Your role is " + _myRole + "." + "\n" + "--------------------------------------------------------------");
                         _currentPeriod = Game.PeriodEnum.Night;
                         EnableButton(BtnAction, true);
                         switch (_myRole)
@@ -217,14 +217,16 @@ namespace WerewolfClient
                         UpdateAvatar(wm);
                         break;
                     case EventEnum.SwitchToDayTime:
-                        AddChatMessage("Switch to day time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
+                        AddChatMessage("--------------------------------------------------------------" + "\n" + "Switch to day time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Day;
                         LBPeriod.Text = "Day time of";
+                        AddChatMessage("--------------------------------------------------------------");
                         break;
                     case EventEnum.SwitchToNightTime:
-                        AddChatMessage("Switch to night time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
+                        AddChatMessage("--------------------------------------------------------------" + "\n" + "Switch to night time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Night;
                         LBPeriod.Text = "Night time of";
+                        AddChatMessage("--------------------------------------------------------------");
                         break;
                     case EventEnum.UpdateDay:
                         // TODO  catch parse exception here
