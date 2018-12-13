@@ -102,6 +102,17 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\รักษา.png" />
+    <None Include="Resources\ยิง.png" />
+    <None Include="Resources\ใบ้.png" />
+    <None Include="Resources\น้ำมน.png" />
+    <None Include="Resources\ตาหมา.png" />
+    <None Include="Resources\เซีย.png" />
+    <None Include="Resources\ชุบ.png" />
+    <None Include="Resources\ฆ่า.png" />
+    <None Include="Resources\คุ้มกัน.png" />
+    <None Include="Resources\ขัง.png" />
+    <None Include="Resources\dog.png" />
     <Content Include="Resources\Icon_alpha_werewolf.png" />
     <Content Include="Resources\Icon_aura_seer.png" />
     <Content Include="Resources\Icon_bodyguard.png" />
