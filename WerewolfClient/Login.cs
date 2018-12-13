@@ -45,7 +45,7 @@ namespace WerewolfClient
                         }
                         else 
                         {
-                            MessageBox.Show("Your password is ready to use !!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Fail sign up. Do it again later", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         break;
                 }
