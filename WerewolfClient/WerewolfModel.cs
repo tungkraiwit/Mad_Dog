@@ -288,6 +288,7 @@ namespace WerewolfClient
                          
                         _event = EventEnum.GameStopped;
                         _isPlaying = false;
+                        _game = _gameEP.GameSessionSessionIDDelete(_player.Session);
                         _eventPayloads["Game.Outcome"] = _game.Outcome.ToString();
                         NotifyAll();
                     }
