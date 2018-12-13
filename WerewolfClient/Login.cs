@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace WerewolfClient
 {
@@ -14,10 +15,13 @@ namespace WerewolfClient
     {
         private WerewolfController controller;
         private Form _mainForm;
+        WindowsMediaPlayer intro = new WindowsMediaPlayer();
         public Login(Form MainForm)
         {
             InitializeComponent();
             _mainForm = MainForm;
+            intro.URL = "login.mp3";
+            intro.controls.play();
         }
 
         public void Notify(Model m)
@@ -63,6 +67,7 @@ namespace WerewolfClient
             wcmd.Action = WerewolfCommand.CommandEnum.SignIn;
             wcmd.Payloads = new Dictionary<string, string>() { { "Login", TbLogin.Text }, { "Password", TbPassword.Text }, { "Server", TBServer.Text } };
             controller.ActionPerformed(wcmd);
+            intro.controls.stop();
         }
 
         private void BtnSignUp_Click(object sender, EventArgs e)
