@@ -272,6 +272,10 @@ namespace WerewolfClient
                             _isDead = false;
                         }
                         break;
+                    case EventEnum.signOut:
+
+                        break;
+                    
                     case EventEnum.ChatMessage:
                         if (wm.EventPayloads["Success"] == WerewolfModel.TRUE)
                         {

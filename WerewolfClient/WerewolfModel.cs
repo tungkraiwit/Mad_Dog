@@ -58,6 +58,7 @@ namespace WerewolfClient
             Alive = 15,
             Chat = 16,
             ChatMessage = 17,
+            signOut = 18
         }
         public const string ROLE_SEER = "Seer";
         public const string ROLE_AURA_SEER = "Aura Seer";
@@ -411,6 +412,23 @@ namespace WerewolfClient
                 _eventPayloads["Error"] = ex.ToString();
             }
             NotifyAll();
+        }
+        public void signOut()
+        {
+            try
+            {
+                _event = EventEnum.SignUp;
+                _eventPayloads["Success"] = TRUE;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                _event = EventEnum.SignUp;
+                _eventPayloads["Success"] = FALSE;
+                _eventPayloads["Error"] = ex.ToString();
+
+                NotifyAll();
+            }
         }
 
         public void Vote(string target)
