@@ -22,14 +22,14 @@ namespace WerewolfClient
         private List<Role> _roles = null;
         private List<Action> _actions = null;
         private Player _player = null;
-        public Player Player { get => _player; }
+        public Player Player { get => _player;  }
         private Game _game = null;
         private Role _playerRole = null;
         private List<Action> _playerActions = null;
         private Game.PeriodEnum? _currentPeriod;
         private int? _currentDay;
         private int _currentTime;
-        private List<Player> _players = null;
+        private List<Player> _players;
         public List<Player> Players { get => _players; }
         private List<Player> _prevPlayers = null;
         public List<Player> PrevPlayers { get => _prevPlayers; }
@@ -283,9 +283,11 @@ namespace WerewolfClient
                         _eventPayloads["Game.Current.Time"] = _currentTime.ToString();
                         NotifyAll();
                     }
-                    else
+                    else//try to end
                     {
+                         
                         _event = EventEnum.GameStopped;
+                        _isPlaying = false;
                         _eventPayloads["Game.Outcome"] = _game.Outcome.ToString();
                         NotifyAll();
                     }
@@ -370,6 +372,10 @@ namespace WerewolfClient
                 InitilizeModel(server);
                 Player p = new Player(null, login, password, null, null, null, Player.StatusEnum.Offline);
                 _player = _playerEP.LoginPlayer(p);
+                //if(_player.Id  == null)
+                //{
+                //    throw new Exception("fail_signIn");
+                //}
                 Console.WriteLine(_player.Session);
                 _event = EventEnum.SignIn;
                 _eventPayloads["Success"] = TRUE;
@@ -389,9 +395,12 @@ namespace WerewolfClient
                 PlayerApi playerEP = new PlayerApi(server);
                 Player p = new Player(null, login, password, null, null, null, Player.StatusEnum.Offline);
                 _player = playerEP.AddPlayer(p);
-
+                //if(_player.Id != null)
+                //{
+                //    throw new Exception("fail_signUp");
+                //}
                 Console.WriteLine(_player.Id);
-                _event = EventEnum.SignIn;
+                _event = EventEnum.SignUp;
                 _eventPayloads["Success"] = TRUE;
             } catch (Exception ex)
             {

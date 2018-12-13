@@ -152,8 +152,22 @@ namespace WerewolfAPI.Model
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
+        private string name;
         [DataMember(Name="name", EmitDefaultValue=false)]
-        public string Name { get; set; }
+        public string Name {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                if (Name == null || Name == "")
+                {
+                    throw new InvalidDataException("name cant be Null or \"\"");
+                }
+                name = value;
+            }
+        }
 
         /// <summary>
         /// Gets or Sets Password

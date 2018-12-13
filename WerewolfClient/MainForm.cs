@@ -72,6 +72,7 @@ namespace WerewolfClient
                 if (player.Name == wm.Player.Name || player.Status != Player.StatusEnum.Alive)
                 {
                     // FIXME, need to optimize this
+                    
                     Image img = Properties.Resources.Icon_villager;
                     string role;
                     if (player.Name == wm.Player.Name)
@@ -160,8 +161,12 @@ namespace WerewolfClient
                             MessageBox.Show("You can't join the game, please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         break;
-                    case EventEnum.GameStopped:
+                    case EventEnum.GameStopped:// end game Here
                         AddChatMessage("Game is finished, outcome is " + wm.EventPayloads["Game.Outcome"]);
+                      
+                        EnableButton(BtnAction, false);
+                        EnableButton(BtnVote, false);
+                        EnableButton(BtnJoin, true);
                         _updateTimer.Enabled = false;
                         break;
                     case EventEnum.GameStarted:

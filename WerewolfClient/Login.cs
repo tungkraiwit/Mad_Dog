@@ -43,9 +43,9 @@ namespace WerewolfClient
                         {
                             MessageBox.Show("Sign up successfuly, please login", "Success", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                         }
-                        else
+                        else 
                         {
-                            MessageBox.Show("Login or password incorrect, please try again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Your password is ready to use !!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         break;
                 }
