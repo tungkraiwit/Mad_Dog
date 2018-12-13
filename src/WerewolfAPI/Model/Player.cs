@@ -161,7 +161,7 @@ namespace WerewolfAPI.Model
             }
             set
             {
-                if (Name == null || Name == "")
+                if (value == null || value == "")
                 {
                     throw new InvalidDataException("name cant be Null or \"\"");
                 }
