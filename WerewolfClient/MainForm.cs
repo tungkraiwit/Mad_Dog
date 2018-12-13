@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 using EventEnum = WerewolfClient.WerewolfModel.EventEnum;
 using CommandEnum = WerewolfClient.WerewolfCommand.CommandEnum;
 using WerewolfAPI.Model;
@@ -26,6 +27,7 @@ namespace WerewolfClient
         private string _myRole;
         private bool _isDead;
         private List<Player> players = null;
+        WindowsMediaPlayer game = new WindowsMediaPlayer();
         public MainForm()
         {
             InitializeComponent();
@@ -36,6 +38,8 @@ namespace WerewolfClient
                 this.Controls["GBPlayers"].Controls["BtnPlayer" + i].Tag = i;
             }
 
+            game.URL = "game.mp3";
+            game.controls.stop();
             _updateTimer = new Timer();
             _voteActivated = false;
             _actionActivated = false;
@@ -101,7 +105,7 @@ namespace WerewolfClient
                             img = Properties.Resources.Icon_doctor;
                             break;
                         case WerewolfModel.ROLE_WEREWOLF:
-                            img = Properties.Resources.Icon_werewolf;
+                            img = Properties.Resources.nani;
                             break;
                         case WerewolfModel.ROLE_WEREWOLF_SEER:
                             img = Properties.Resources.Icon_wolf_seer;
@@ -131,7 +135,7 @@ namespace WerewolfClient
                             img = Properties.Resources.Icon_serial_killer;
                             break;
                         case WerewolfModel.ROLE_GUNNER:
-                            img = Properties.Resources.Icon_gunner;
+                            img = Properties.Resources.omae_wa_mo_shinde_iru;
                             break;
                     }
                     ((Button)Controls["GBPlayers"].Controls["BtnPlayer" + i]).Image = img;
@@ -147,6 +151,7 @@ namespace WerewolfClient
                 switch (wm.Event)
                 {
                     case EventEnum.JoinGame:
+                        game.controls.play();
                         if (wm.EventPayloads["Success"] == WerewolfModel.TRUE)
                         {
                             BtnJoin.Visible = false;
@@ -161,6 +166,7 @@ namespace WerewolfClient
                         }
                         break;
                     case EventEnum.GameStopped:
+                        game.controls.stop();
                         AddChatMessage("Game is finished, outcome is " + wm.EventPayloads["Game.Outcome"]);
                         _updateTimer.Enabled = false;
                         break;

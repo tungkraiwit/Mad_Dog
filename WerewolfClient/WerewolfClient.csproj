@@ -120,6 +120,8 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\nani.gif" />
+    <None Include="Resources\omae wa mo shinde iru.gif" />
     <None Include="Resources\dog.png" />
     <Content Include="Resources\Icon_alpha_werewolf.png" />
     <Content Include="Resources\Icon_aura_seer.png" />
