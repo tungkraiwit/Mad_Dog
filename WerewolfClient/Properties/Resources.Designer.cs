@@ -73,6 +73,16 @@ namespace WerewolfClient.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gunner_use {
+            get {
+                object obj = ResourceManager.GetObject("Gunner_use", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icon_alpha_werewolf {
             get {
                 object obj = ResourceManager.GetObject("Icon_alpha_werewolf", resourceCulture);
@@ -226,6 +236,26 @@ namespace WerewolfClient.Properties {
         internal static System.Drawing.Bitmap Icon_wolf_shaman {
             get {
                 object obj = ResourceManager.GetObject("Icon_wolf_shaman", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap test {
+            get {
+                object obj = ResourceManager.GetObject("test", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Werewolf_use {
+            get {
+                object obj = ResourceManager.GetObject("Werewolf_use", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

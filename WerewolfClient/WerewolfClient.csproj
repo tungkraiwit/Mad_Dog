@@ -102,6 +102,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\test.gif" />
+    <None Include="Resources\Werewolf_use.PNG" />
     <None Include="Resources\รักษา.png" />
     <None Include="Resources\ยิง.png" />
     <None Include="Resources\ใบ้.png" />
@@ -113,6 +115,7 @@
     <None Include="Resources\คุ้มกัน.png" />
     <None Include="Resources\ขัง.png" />
     <None Include="Resources\dog.png" />
+    <None Include="Resources\Gunner_use.PNG" />
     <Content Include="Resources\Icon_alpha_werewolf.png" />
     <Content Include="Resources\Icon_aura_seer.png" />
     <Content Include="Resources\Icon_bodyguard.png" />
