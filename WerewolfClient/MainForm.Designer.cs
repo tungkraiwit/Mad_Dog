@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.GBPlayers = new System.Windows.Forms.GroupBox();
             this.GBChat = new System.Windows.Forms.GroupBox();
             this.TbChatInput = new System.Windows.Forms.TextBox();
             this.TbChatBox = new System.Windows.Forms.TextBox();
@@ -43,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnAction = new System.Windows.Forms.Button();
+            this.GBPlayers = new System.Windows.Forms.GroupBox();
             this.Animation = new System.Windows.Forms.Button();
             this.Char_pic = new System.Windows.Forms.Button();
             this.BtnPlayer15 = new System.Windows.Forms.Button();
@@ -61,42 +61,11 @@
             this.BtnPlayer2 = new System.Windows.Forms.Button();
             this.BtnPlayer1 = new System.Windows.Forms.Button();
             this.BtnPlayer0 = new System.Windows.Forms.Button();
-            this.GBPlayers.SuspendLayout();
             this.GBChat.SuspendLayout();
             this.GBAction.SuspendLayout();
             this.GBStatus.SuspendLayout();
+            this.GBPlayers.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // GBPlayers
-            // 
-            this.GBPlayers.BackColor = System.Drawing.Color.Transparent;
-            this.GBPlayers.BackgroundImage = global::WerewolfClient.Properties.Resources.dog;
-            this.GBPlayers.Controls.Add(this.Animation);
-            this.GBPlayers.Controls.Add(this.Char_pic);
-            this.GBPlayers.Controls.Add(this.BtnPlayer15);
-            this.GBPlayers.Controls.Add(this.BtnPlayer14);
-            this.GBPlayers.Controls.Add(this.BtnPlayer13);
-            this.GBPlayers.Controls.Add(this.BtnPlayer12);
-            this.GBPlayers.Controls.Add(this.BtnPlayer11);
-            this.GBPlayers.Controls.Add(this.BtnPlayer10);
-            this.GBPlayers.Controls.Add(this.BtnPlayer9);
-            this.GBPlayers.Controls.Add(this.BtnPlayer8);
-            this.GBPlayers.Controls.Add(this.BtnPlayer7);
-            this.GBPlayers.Controls.Add(this.BtnPlayer6);
-            this.GBPlayers.Controls.Add(this.BtnPlayer5);
-            this.GBPlayers.Controls.Add(this.BtnPlayer4);
-            this.GBPlayers.Controls.Add(this.BtnPlayer3);
-            this.GBPlayers.Controls.Add(this.BtnPlayer2);
-            this.GBPlayers.Controls.Add(this.BtnPlayer1);
-            this.GBPlayers.Controls.Add(this.BtnPlayer0);
-            this.GBPlayers.Location = new System.Drawing.Point(-8, 0);
-            this.GBPlayers.Margin = new System.Windows.Forms.Padding(4);
-            this.GBPlayers.Name = "GBPlayers";
-            this.GBPlayers.Padding = new System.Windows.Forms.Padding(4);
-            this.GBPlayers.Size = new System.Drawing.Size(1182, 664);
-            this.GBPlayers.TabIndex = 0;
-            this.GBPlayers.TabStop = false;
-            this.GBPlayers.Text = "Players";
             // 
             // GBChat
             // 
@@ -250,6 +219,37 @@
             this.BtnAction.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAction.UseVisualStyleBackColor = true;
             // 
+            // GBPlayers
+            // 
+            this.GBPlayers.BackColor = System.Drawing.Color.Transparent;
+            this.GBPlayers.BackgroundImage = global::WerewolfClient.Properties.Resources.dog;
+            this.GBPlayers.Controls.Add(this.Animation);
+            this.GBPlayers.Controls.Add(this.Char_pic);
+            this.GBPlayers.Controls.Add(this.BtnPlayer15);
+            this.GBPlayers.Controls.Add(this.BtnPlayer14);
+            this.GBPlayers.Controls.Add(this.BtnPlayer13);
+            this.GBPlayers.Controls.Add(this.BtnPlayer12);
+            this.GBPlayers.Controls.Add(this.BtnPlayer11);
+            this.GBPlayers.Controls.Add(this.BtnPlayer10);
+            this.GBPlayers.Controls.Add(this.BtnPlayer9);
+            this.GBPlayers.Controls.Add(this.BtnPlayer8);
+            this.GBPlayers.Controls.Add(this.BtnPlayer7);
+            this.GBPlayers.Controls.Add(this.BtnPlayer6);
+            this.GBPlayers.Controls.Add(this.BtnPlayer5);
+            this.GBPlayers.Controls.Add(this.BtnPlayer4);
+            this.GBPlayers.Controls.Add(this.BtnPlayer3);
+            this.GBPlayers.Controls.Add(this.BtnPlayer2);
+            this.GBPlayers.Controls.Add(this.BtnPlayer1);
+            this.GBPlayers.Controls.Add(this.BtnPlayer0);
+            this.GBPlayers.Location = new System.Drawing.Point(-8, 0);
+            this.GBPlayers.Margin = new System.Windows.Forms.Padding(4);
+            this.GBPlayers.Name = "GBPlayers";
+            this.GBPlayers.Padding = new System.Windows.Forms.Padding(4);
+            this.GBPlayers.Size = new System.Drawing.Size(1182, 664);
+            this.GBPlayers.TabIndex = 0;
+            this.GBPlayers.TabStop = false;
+            this.GBPlayers.Text = "Players";
+            // 
             // Animation
             // 
             this.Animation.BackColor = System.Drawing.Color.Transparent;
@@ -257,10 +257,10 @@
             this.Animation.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Animation.Image = ((System.Drawing.Image)(resources.GetObject("Animation.Image")));
             this.Animation.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Animation.Location = new System.Drawing.Point(730, 227);
+            this.Animation.Location = new System.Drawing.Point(741, 233);
             this.Animation.Margin = new System.Windows.Forms.Padding(4);
             this.Animation.Name = "Animation";
-            this.Animation.Size = new System.Drawing.Size(66, 71);
+            this.Animation.Size = new System.Drawing.Size(95, 99);
             this.Animation.TabIndex = 18;
             this.Animation.Tag = "15";
             this.Animation.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -516,12 +516,12 @@
             this.Name = "MainForm";
             this.Text = "Werewolf Client";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
-            this.GBPlayers.ResumeLayout(false);
             this.GBChat.ResumeLayout(false);
             this.GBChat.PerformLayout();
             this.GBAction.ResumeLayout(false);
             this.GBStatus.ResumeLayout(false);
             this.GBStatus.PerformLayout();
+            this.GBPlayers.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

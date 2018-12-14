@@ -135,7 +135,9 @@ namespace WerewolfClient
                         case WerewolfModel.ROLE_GUNNER:
                             img = Properties.Resources.gunner_icon_resize_;
                             Char_pic.Image = Properties.Resources.Gunner_use;
-                            Animation.Image = Properties.Resources.test;
+                            Animation.Image = Properties.Resources.standby;
+                               
+                         
                             break;
                     }
                     ((Button)Controls["GBPlayers"].Controls["BtnPlayer" + i]).Image = img;
@@ -348,6 +350,7 @@ namespace WerewolfClient
             if (_isDead)
             {
                 AddChatMessage("You're dead!!");
+                if (_myRole == WerewolfModel.ROLE_WEREWOLF) Animation.Image = Properties.Resources.dead;
                 return;
             }
             if (_actionActivated)

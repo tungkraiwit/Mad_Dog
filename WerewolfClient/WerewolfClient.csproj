@@ -102,6 +102,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\test4.gif" />
+    <None Include="Resources\test3.gif" />
+    <None Include="Resources\test2.gif" />
     <None Include="Resources\werewolfshaman_icon%28resize%29.png" />
     <None Include="Resources\werewolfseer_icon%28resize%29.png" />
     <None Include="Resources\werewolf_icon%28resize%29.png" />

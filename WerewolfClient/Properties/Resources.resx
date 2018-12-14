@@ -226,6 +226,9 @@
   <data name="bountyhunter_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bountyhunter_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\test4.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="doctor_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\doctor_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -273,6 +276,12 @@
   </data>
   <data name="serialkiller_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\serialkiller_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\test2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="standby2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\test3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="test" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\test.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
