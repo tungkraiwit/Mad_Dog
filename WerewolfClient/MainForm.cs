@@ -72,7 +72,7 @@ namespace WerewolfClient
                 if (player.Name == wm.Player.Name || player.Status != Player.StatusEnum.Alive)
                 {
                     // FIXME, need to optimize this
-                    Image img = Properties.Resources.villager_icon;
+                    Image img = Properties.Resources.villager_icon_resize_;
                     string role;
                     if (player.Name == wm.Player.Name)
                     {
@@ -103,7 +103,7 @@ namespace WerewolfClient
                         case WerewolfModel.ROLE_WEREWOLF:
                             img = Properties.Resources.werewolf_icon_resize_;
                             Char_pic.Image = Properties.Resources.Werewolf_use;
-                            Animation.Image = Properties.Resources.test;
+                         //   Animation.Image = Properties.Resources.test;
                             break;
                         case WerewolfModel.ROLE_WEREWOLF_SEER:
                             img = Properties.Resources.werewolfseer_icon_resize_;
@@ -135,7 +135,7 @@ namespace WerewolfClient
                         case WerewolfModel.ROLE_GUNNER:
                             img = Properties.Resources.gunner_icon_resize_;
                             Char_pic.Image = Properties.Resources.Gunner_use;
-                            Animation.Image = Properties.Resources.standby;
+                          //  Animation.Image = Properties.Resources.standby;
                                
                          
                             break;
@@ -350,7 +350,7 @@ namespace WerewolfClient
             if (_isDead)
             {
                 AddChatMessage("You're dead!!");
-                if (_myRole == WerewolfModel.ROLE_WEREWOLF) Animation.Image = Properties.Resources.dead;
+               // if (_myRole == WerewolfModel.ROLE_WEREWOLF) Animation.Image = Properties.Resources.dead;
                 return;
             }
             if (_actionActivated)
