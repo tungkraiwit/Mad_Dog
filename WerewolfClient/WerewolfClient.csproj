@@ -102,6 +102,22 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\werewolfshaman_icon%28resize%29.png" />
+    <None Include="Resources\werewolfseer_icon%28resize%29.png" />
+    <None Include="Resources\werewolf_icon%28resize%29.png" />
+    <None Include="Resources\villager_icon%28resize%29.png" />
+    <None Include="Resources\serialkiller_icon%28resize%29.png" />
+    <None Include="Resources\seer_icon%28resize%29.png" />
+    <None Include="Resources\medium_icon%28resize%29.png" />
+    <None Include="Resources\jailer_icon%28resize%29.png" />
+    <None Include="Resources\villager_icon.png" />
+    <None Include="Resources\werewolfshaman_icon.png" />
+    <None Include="Resources\werewolfseer_icon.png" />
+    <None Include="Resources\werewolf_icon.png" />
+    <None Include="Resources\serialkiller_icon.png" />
+    <None Include="Resources\seer_icon.png" />
+    <None Include="Resources\medium_icon.png" />
+    <None Include="Resources\jailer_icon.png" />
     <None Include="Resources\test.gif" />
     <None Include="Resources\Werewolf_use.PNG" />
     <None Include="Resources\รักษา.png" />
@@ -116,6 +132,22 @@
     <None Include="Resources\ขัง.png" />
     <None Include="Resources\dog.png" />
     <None Include="Resources\Gunner_use.PNG" />
+    <None Include="Resources\alphawerewolf_icon.png" />
+    <None Include="Resources\auraseer_icon.png" />
+    <None Include="Resources\bible_icon.png" />
+    <None Include="Resources\bodyguard_icon.png" />
+    <None Include="Resources\bountyhunter_icon.png" />
+    <None Include="Resources\doctor_icon.png" />
+    <None Include="Resources\fool_icon.png" />
+    <None Include="Resources\gunner_icon.png" />
+    <None Include="Resources\alphawerewolf_icon.%28resize%29png.png" />
+    <None Include="Resources\auraseer_icon%28resize%29.png" />
+    <None Include="Resources\bible_icon%28resize%29.png" />
+    <None Include="Resources\bodyguard_icon%28resize%29.png" />
+    <None Include="Resources\bountyhunter_icon%28resize%29.png" />
+    <None Include="Resources\doctor_icon%28resize%29.png" />
+    <None Include="Resources\fool_icon%28resize%29.png" />
+    <None Include="Resources\gunner_icon%28resize%29.png" />
     <Content Include="Resources\Icon_alpha_werewolf.png" />
     <Content Include="Resources\Icon_aura_seer.png" />
     <Content Include="Resources\Icon_bodyguard.png" />

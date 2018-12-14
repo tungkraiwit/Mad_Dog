@@ -196,14 +196,110 @@
   <data name="ใบ้" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ใบ้.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="alphawerewolf_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alphawerewolf_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alphawerewolf_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alphawerewolf_icon.(resize)png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="auraseer_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\auraseer_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="auraseer_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\auraseer_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bible_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bible_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bible_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bible_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bodyguard_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bodyguard_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bodyguard_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bodyguard_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bountyhunter_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bountyhunter_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bountyhunter_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bountyhunter_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doctor_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doctor_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doctor_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doctor_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fool_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fool_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fool_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fool_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gunner_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gunner_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gunner_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gunner_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Gunner_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gunner_use.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_head_hunter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_head_hunter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="jailer_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jailer_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jailer_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jailer_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medium_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medium_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seer_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seer_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seer_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seer_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="serialkiller_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\serialkiller_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="serialkiller_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\serialkiller_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="test" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\test.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="villager_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\villager_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="villager_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\villager_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="werewolfseer_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\werewolfseer_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="werewolfseer_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\werewolfseer_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="werewolfshaman_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\werewolfshaman_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="werewolfshaman_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\werewolfshaman_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="werewolf_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\werewolf_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="werewolf_icon_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\werewolf_icon(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Werewolf_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Werewolf_use.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

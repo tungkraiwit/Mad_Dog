@@ -89,11 +89,11 @@
             this.GBPlayers.Controls.Add(this.BtnPlayer2);
             this.GBPlayers.Controls.Add(this.BtnPlayer1);
             this.GBPlayers.Controls.Add(this.BtnPlayer0);
-            this.GBPlayers.Location = new System.Drawing.Point(3, 6);
+            this.GBPlayers.Location = new System.Drawing.Point(-8, 0);
             this.GBPlayers.Margin = new System.Windows.Forms.Padding(4);
             this.GBPlayers.Name = "GBPlayers";
             this.GBPlayers.Padding = new System.Windows.Forms.Padding(4);
-            this.GBPlayers.Size = new System.Drawing.Size(1168, 670);
+            this.GBPlayers.Size = new System.Drawing.Size(1182, 664);
             this.GBPlayers.TabIndex = 0;
             this.GBPlayers.TabStop = false;
             this.GBPlayers.Text = "Players";
@@ -270,10 +270,10 @@
             // 
             this.Char_pic.Image = ((System.Drawing.Image)(resources.GetObject("Char_pic.Image")));
             this.Char_pic.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Char_pic.Location = new System.Drawing.Point(890, 118);
+            this.Char_pic.Location = new System.Drawing.Point(901, 118);
             this.Char_pic.Margin = new System.Windows.Forms.Padding(4);
             this.Char_pic.Name = "Char_pic";
-            this.Char_pic.Size = new System.Drawing.Size(146, 150);
+            this.Char_pic.Size = new System.Drawing.Size(173, 180);
             this.Char_pic.TabIndex = 17;
             this.Char_pic.Tag = "15";
             this.Char_pic.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
