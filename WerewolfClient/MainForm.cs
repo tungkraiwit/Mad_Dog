@@ -217,12 +217,32 @@ namespace WerewolfClient
                         UpdateAvatar(wm);
                         break;
                     case EventEnum.SwitchToDayTime:
+                        switch (_myRole)
+                        {
+                            case WerewolfModel.ROLE_WEREWOLF:
+                                EnableButton(BtnAction, false);
+                                break;
+                            default:
+                                EnableButton(BtnAction, true);
+                                break;
+                        }
+                        EnableButton(BtnVote, true);
                         AddChatMessage("--------------------------------------------------------------" + "\n" + "Switch to day time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Day;
                         LBPeriod.Text = "Day time of";
                         AddChatMessage("--------------------------------------------------------------");
                         break;
                     case EventEnum.SwitchToNightTime:
+                        switch (_myRole)
+                        {
+                            case WerewolfModel.ROLE_WEREWOLF:
+                                EnableButton(BtnAction, false);
+                                break;
+                            default:
+                                EnableButton(BtnAction, true);
+                                break;
+                        }
+                        EnableButton(BtnVote, true);
                         AddChatMessage("--------------------------------------------------------------" + "\n" + "Switch to night time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Night;
                         LBPeriod.Text = "Night time of";
@@ -377,6 +397,7 @@ namespace WerewolfClient
                 wcmd.Action = CommandEnum.Action;
                 wcmd.Payloads = new Dictionary<string, string>() { { "Target", players[index].Id.ToString() } };
                 controller.ActionPerformed(wcmd);
+                EnableButton(BtnAction, false);
             }
             if (_voteActivated)
             {
@@ -387,6 +408,7 @@ namespace WerewolfClient
                 wcmd.Action = CommandEnum.Vote;
                 wcmd.Payloads = new Dictionary<string, string>() { { "Target", players[index].Id.ToString() } };
                 controller.ActionPerformed(wcmd);
+                EnableButton(BtnVote, false);
             }
         }
 
