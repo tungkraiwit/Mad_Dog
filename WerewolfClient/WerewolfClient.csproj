@@ -102,6 +102,30 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\WolfShaman_use.png" />
+    <None Include="Resources\WolfShaman_standby.gif" />
+    <None Include="Resources\WolfShaman_died.gif" />
+    <None Include="Resources\WolfSeer2_standby.gif" />
+    <None Include="Resources\WolfSeer2_died.gif" />
+    <None Include="Resources\WolfSeer_use.png" />
+    <None Include="Resources\Werewolf_standby.gif" />
+    <None Include="Resources\Werewolf_died.gif" />
+    <None Include="Resources\SerialKiller_use.png" />
+    <None Include="Resources\SerialKiller_standby.gif" />
+    <None Include="Resources\SerialKiller_died.gif" />
+    <None Include="Resources\Seer2_standby.gif" />
+    <None Include="Resources\Seer2_died.gif" />
+    <None Include="Resources\Seer_use.png" />
+    <None Include="Resources\Priest_use.png" />
+    <None Include="Resources\Priest_standby.gif" />
+    <None Include="Resources\Priest_died.gif" />
+    <None Include="Resources\Null%28resize%29.png" />
+    <None Include="Resources\Medium_use.png" />
+    <None Include="Resources\Medium_standby.gif" />
+    <None Include="Resources\Medium_died.gif" />
+    <None Include="Resources\Jailer_use.png" />
+    <None Include="Resources\Jailer_standby.gif" />
+    <None Include="Resources\Jailer_died.gif" />
     <None Include="Resources\test4.gif" />
     <None Include="Resources\test3.gif" />
     <None Include="Resources\test2.gif" />
@@ -151,6 +175,26 @@
     <None Include="Resources\doctor_icon%28resize%29.png" />
     <None Include="Resources\fool_icon%28resize%29.png" />
     <None Include="Resources\gunner_icon%28resize%29.png" />
+    <None Include="Resources\AlphaWerewolf_use.png" />
+    <None Include="Resources\AuraSeer_died.gif" />
+    <None Include="Resources\AuraSeer_standby.gif" />
+    <None Include="Resources\AuraSeer_use.PNG" />
+    <None Include="Resources\Bodyguard_died.gif" />
+    <None Include="Resources\Bodyguard_standby.png.gif" />
+    <None Include="Resources\Bodyguard_use.png" />
+    <None Include="Resources\Doctor_died.gif" />
+    <None Include="Resources\Doctor_standby.gif" />
+    <None Include="Resources\Doctor_use.png" />
+    <None Include="Resources\Fool_died.gif" />
+    <None Include="Resources\Fool_standby.gif" />
+    <None Include="Resources\Fool_use.png" />
+    <None Include="Resources\Gunner_died.gif" />
+    <None Include="Resources\Gunner_standby.gif" />
+    <None Include="Resources\Headhunter_died.gif" />
+    <None Include="Resources\Headhunter_standby.gif" />
+    <None Include="Resources\Headhunter_use.png" />
+    <None Include="Resources\AlphaWerewolf_dead.gif" />
+    <None Include="Resources\AlphaWerewolf_standby.gif" />
     <Content Include="Resources\Icon_alpha_werewolf.png" />
     <Content Include="Resources\Icon_aura_seer.png" />
     <Content Include="Resources\Icon_bodyguard.png" />

@@ -90,54 +90,83 @@ namespace WerewolfClient
                     {
                         case WerewolfModel.ROLE_SEER:
                             img = Properties.Resources.seer_icon_resize_;
+                            Char_pic.Image = Properties.Resources.Seer_use;
+                            Animation.Image = Properties.Resources.Seer2_standby;
                             break;
                         case WerewolfModel.ROLE_AURA_SEER:
                             img = Properties.Resources.auraseer_icon_resize_;
+                            Char_pic.Image = Properties.Resources.AuraSeer_use;
+                            Animation.Image = Properties.Resources.AuraSeer_standby;
                             break;
                         case WerewolfModel.ROLE_PRIEST:
                             img = Properties.Resources.bible_icon_resize_;
+                            Char_pic.Image = Properties.Resources.Priest_use;
+                            Animation.Image = Properties.Resources.Priest_standby;
                             break;
                         case WerewolfModel.ROLE_DOCTOR:
                             img = Properties.Resources.doctor_icon_resize_;
+                            Char_pic.Image = Properties.Resources.Doctor_use;
+                            Animation.Image = Properties.Resources.Doctor_standby;
                             break;
                         case WerewolfModel.ROLE_WEREWOLF:
                             img = Properties.Resources.werewolf_icon_resize_;
                             Char_pic.Image = Properties.Resources.Werewolf_use;
-                         //   Animation.Image = Properties.Resources.test;
+                            Animation.Image = Properties.Resources.Werewolf_standby;
                             break;
                         case WerewolfModel.ROLE_WEREWOLF_SEER:
                             img = Properties.Resources.werewolfseer_icon_resize_;
+                            Char_pic.Image = Properties.Resources.WolfSeer_use;
+                            Animation.Image = Properties.Resources.WolfSeer2_standby;
                             break;
                         case WerewolfModel.ROLE_ALPHA_WEREWOLF:
                             img = Properties.Resources.alphawerewolf_icon_resize_;
+                            Char_pic.Image = Properties.Resources.AlphaWerewolf_use;
+                            Animation.Image = Properties.Resources.AlphaWerewolf_standby;
                             break;
                         case WerewolfModel.ROLE_WEREWOLF_SHAMAN:
                             img = Properties.Resources.werewolfshaman_icon_resize_;
+                            Char_pic.Image = Properties.Resources.WolfShaman_use;
+                            Animation.Image = Properties.Resources.WolfShaman_standby;
                             break;
                         case WerewolfModel.ROLE_MEDIUM:
                             img = Properties.Resources.medium_icon_resize_;
+                            Char_pic.Image = Properties.Resources.Medium_use;
+                            Animation.Image = Properties.Resources.Medium_standby; 
                             break;
                         case WerewolfModel.ROLE_BODYGUARD:
                             img = Properties.Resources.bodyguard_icon_resize_;
+                            Char_pic.Image = Properties.Resources.Bodyguard_use;
+                            Animation.Image = Properties.Resources.Bodyguard_standby;
                             break;
                         case WerewolfModel.ROLE_JAILER:
                             img = Properties.Resources.jailer_icon_resize_;
+                            Char_pic.Image = Properties.Resources.Jailer_use;
+                            Animation.Image = Properties.Resources.Jailer_standby;
                             break;
                         case WerewolfModel.ROLE_FOOL:
                             img = Properties.Resources.fool_icon_resize_;
+                            Char_pic.Image = Properties.Resources.Fool_use;
+                            Animation.Image = Properties.Resources.Fool_standby;
                             break;
                         case WerewolfModel.ROLE_HEAD_HUNTER:
                             img = Properties.Resources.bountyhunter_icon_resize_;
+                            Char_pic.Image = Properties.Resources.Headhunter_use;
+                            Animation.Image = Properties.Resources.Headhunter_standby;
                             break;
                         case WerewolfModel.ROLE_SERIAL_KILLER:
                             img = Properties.Resources.serialkiller_icon_resize_;
+                            Char_pic.Image = Properties.Resources.SerialKiller_use;
+                            Animation.Image = Properties.Resources.SerialKiller_standby;
                             break;
                         case WerewolfModel.ROLE_GUNNER:
                             img = Properties.Resources.gunner_icon_resize_;
                             Char_pic.Image = Properties.Resources.Gunner_use;
-                          //  Animation.Image = Properties.Resources.standby;
-                               
-                         
+                            Animation.Image = Properties.Resources.Gunner_standby;
+                            break;
+                        case null:
+                            img = Properties.Resources.Null_resize_;
+                            Char_pic.Image = Properties.Resources.Null_resize_;
+                            Animation.Image = Properties.Resources.Null_resize_;
                             break;
                     }
                     ((Button)Controls["GBPlayers"].Controls["BtnPlayer" + i]).Image = img;

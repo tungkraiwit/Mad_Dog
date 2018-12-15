@@ -301,4 +301,136 @@
   <data name="Werewolf_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Werewolf_use.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AlphaWerewolf_dead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlphaWerewolf_dead.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlphaWerewolf_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlphaWerewolf_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlphaWerewolf_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlphaWerewolf_use.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AuraSeer_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AuraSeer_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AuraSeer_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AuraSeer_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AuraSeer_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AuraSeer_use.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bodyguard_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bodyguard_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bodyguard_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bodyguard_standby.png.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bodyguard_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bodyguard_use.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Doctor_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Doctor_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Doctor_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Doctor_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Doctor_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Doctor_use.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fool_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fool_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fool_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fool_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fool_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fool_use.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gunner_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gunner_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gunner_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gunner_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Headhunter_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Headhunter_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Headhunter_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Headhunter_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Headhunter_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Headhunter_use.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jailer_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jailer_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jailer_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jailer_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jailer_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jailer_use.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Medium_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Medium_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Medium_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Medium_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Medium_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Medium_use.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Null_resize_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Null(resize).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Priest_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Priest_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Priest_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Priest_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Priest_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Priest_use.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seer2_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seer2_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seer2_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seer2_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seer_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seer_use.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SerialKiller_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SerialKiller_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SerialKiller_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SerialKiller_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SerialKiller_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SerialKiller_use.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Werewolf_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Werewolf_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Werewolf_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Werewolf_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WolfSeer2_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WolfSeer2_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WolfSeer2_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WolfSeer2_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WolfSeer_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WolfSeer_use.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WolfShaman_died" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WolfShaman_died.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WolfShaman_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WolfShaman_standby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WolfShaman_use" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WolfShaman_use.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

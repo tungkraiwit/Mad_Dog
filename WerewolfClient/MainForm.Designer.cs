@@ -33,7 +33,6 @@
             this.TbChatInput = new System.Windows.Forms.TextBox();
             this.TbChatBox = new System.Windows.Forms.TextBox();
             this.GBAction = new System.Windows.Forms.GroupBox();
-            this.BtnAction = new System.Windows.Forms.Button();
             this.BtnJoin = new System.Windows.Forms.Button();
             this.BtnVote = new System.Windows.Forms.Button();
             this.GBStatus = new System.Windows.Forms.GroupBox();
@@ -43,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.GBPlayers = new System.Windows.Forms.GroupBox();
+            this.BtnAction = new System.Windows.Forms.Button();
             this.Animation = new System.Windows.Forms.Button();
             this.Char_pic = new System.Windows.Forms.Button();
             this.BtnPlayer15 = new System.Windows.Forms.Button();
@@ -116,19 +116,6 @@
             this.GBAction.TabIndex = 3;
             this.GBAction.TabStop = false;
             this.GBAction.Text = "Action";
-            // 
-            // BtnAction
-            // 
-            this.BtnAction.Image = ((System.Drawing.Image)(resources.GetObject("BtnAction.Image")));
-            this.BtnAction.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAction.Location = new System.Drawing.Point(128, 23);
-            this.BtnAction.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnAction.Name = "BtnAction";
-            this.BtnAction.Size = new System.Drawing.Size(96, 58);
-            this.BtnAction.TabIndex = 17;
-            this.BtnAction.Tag = "14";
-            this.BtnAction.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnAction.UseVisualStyleBackColor = true;
             // 
             // BtnJoin
             // 
@@ -250,6 +237,19 @@
             this.GBPlayers.TabIndex = 0;
             this.GBPlayers.TabStop = false;
             this.GBPlayers.Text = "Players";
+            // 
+            // BtnAction
+            // 
+            this.BtnAction.Image = ((System.Drawing.Image)(resources.GetObject("BtnAction.Image")));
+            this.BtnAction.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnAction.Location = new System.Drawing.Point(128, 23);
+            this.BtnAction.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnAction.Name = "BtnAction";
+            this.BtnAction.Size = new System.Drawing.Size(96, 58);
+            this.BtnAction.TabIndex = 17;
+            this.BtnAction.Tag = "14";
+            this.BtnAction.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnAction.UseVisualStyleBackColor = true;
             // 
             // Animation
             // 
