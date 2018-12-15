@@ -26,6 +26,7 @@ namespace WerewolfClient
         private bool _actionActivated;
         private string _myRole;
         private bool _isDead;
+        private Login _login;
         private List<Player> players = null;
         WindowsMediaPlayer room = new WindowsMediaPlayer();
         WindowsMediaPlayer ingame = new WindowsMediaPlayer();
@@ -205,7 +206,10 @@ namespace WerewolfClient
                         break;
                     case EventEnum.GameStopped:
                         ingame.controls.stop();
-                        AddChatMessage("Game is finished, outcome is " + wm.EventPayloads["Game.Outcome"]);
+                        AddChatMessage("--------------------------------------------------------------" + "Game is finished, outcome is " + wm.EventPayloads["Game.Outcome"] + "\n" + "--------------------------------------------------------------");
+                        EnableButton(BtnAction, false);
+                        EnableButton(BtnVote, false);
+                        EnableButton(BtnJoin, true);
                         _updateTimer.Enabled = false;
                         break;
                     case EventEnum.GameStarted:
@@ -272,14 +276,14 @@ namespace WerewolfClient
                         AddChatMessage("Switch to day time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Day;
                         LBPeriod.Text = "Day time of";
-                        AddChatMessage("--------------------------------------------------------------");
+                        AddChatMessage("-----------------------------------------------------------");
                         break;
                     case EventEnum.SwitchToNightTime:
                         this.BackgroundImage = Properties.Resources.WerewolfMoon_resize_;
                         AddChatMessage("Switch to night time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Night;
                         LBPeriod.Text = "Night time of";
-                        AddChatMessage("--------------------------------------------------------------");
+                        AddChatMessage("-----------------------------------------------------------");
                         break;
                     case EventEnum.UpdateDay:
                         // TODO  catch parse exception here
@@ -363,6 +367,12 @@ namespace WerewolfClient
         {
             controller = (WerewolfController)c;
         }
+        private void BtnSignOut_Click(object sender, EventArgs e)
+        {
+            WerewolfCommand wcmd = new WerewolfCommand();
+            wcmd.Action = CommandEnum.SignOut;
+            controller.ActionPerformed(wcmd);
+        }
 
         private void BtnJoin_Click(object sender, EventArgs e)
         {
@@ -373,19 +383,26 @@ namespace WerewolfClient
 
         private void BtnVote_Click(object sender, EventArgs e)
         {
-            if (_voteActivated)
+            try
             {
-                BtnVote.BackColor = Button.DefaultBackColor;
+                if (_voteActivated)
+                {
+                    BtnVote.BackColor = Button.DefaultBackColor;
+                }
+                else
+                {
+                    BtnVote.BackColor = Color.Red;
+                }
+                _voteActivated = !_voteActivated;
+                if (_actionActivated)
+                {
+                    BtnAction.BackColor = Button.DefaultBackColor;
+                    _actionActivated = false;
+                }
             }
-            else
+            catch (Exception)
             {
-                BtnVote.BackColor = Color.Red;
-            }
-            _voteActivated = !_voteActivated;
-            if (_actionActivated)
-            {
-                BtnAction.BackColor = Button.DefaultBackColor;
-                _actionActivated = false;
+                AddChatMessage("There isn't anybody here .");
             }
         }
         private void BtnPlayerX_Click(object sender, EventArgs e)
