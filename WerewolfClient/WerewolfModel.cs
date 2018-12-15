@@ -58,6 +58,7 @@ namespace WerewolfClient
             Alive = 15,
             Chat = 16,
             ChatMessage = 17,
+            SignOut = 18
         }
         public const string ROLE_SEER = "Seer";
         public const string ROLE_AURA_SEER = "Aura Seer";
@@ -288,8 +289,16 @@ namespace WerewolfClient
                          
                         _event = EventEnum.GameStopped;
                         _isPlaying = false;
+                        
                         _game = _gameEP.GameSessionSessionIDDelete(_player.Session);
+
+                        _currentTime = 0;
+                        _playerRole = null;
+                        _roles = null;
+                        _actions = null;
                         _eventPayloads["Game.Outcome"] = _game.Outcome.ToString();
+                       
+                        _player.Role = null;
                         NotifyAll();
                     }
                     try
@@ -373,10 +382,10 @@ namespace WerewolfClient
                 InitilizeModel(server);
                 Player p = new Player(null, login, password, null, null, null, Player.StatusEnum.Offline);
                 _player = _playerEP.LoginPlayer(p);
-                //if(_player.Id  == null)
-                //{
-                //    throw new Exception("fail_signIn");
-                //}
+                if(_player.Id  == null)
+                {
+                    throw new Exception("fail_signIn");
+                }
                 Console.WriteLine(_player.Session);
                 _event = EventEnum.SignIn;
                 _eventPayloads["Success"] = TRUE;
@@ -396,10 +405,10 @@ namespace WerewolfClient
                 PlayerApi playerEP = new PlayerApi(server);
                 Player p = new Player(null, login, password, null, null, null, Player.StatusEnum.Offline);
                 _player = playerEP.AddPlayer(p);
-                //if(_player.Id != null)
-                //{
-                //    throw new Exception("fail_signUp");
-                //}
+                if(_player.Id != null)
+                {
+                    throw new Exception("fail_signUp");
+                }
                 Console.WriteLine(_player.Id);
                 _event = EventEnum.SignUp;
                 _eventPayloads["Success"] = TRUE;
@@ -410,6 +419,28 @@ namespace WerewolfClient
                 _eventPayloads["Success"] = FALSE;
                 _eventPayloads["Error"] = ex.ToString();
             }
+            NotifyAll();
+        }
+        public void SignOut()
+        {
+            try
+            {
+                _playerEP.LogoutPlayer(_player.Session);
+                _game = null;
+                _player = null;
+                _playerRole = null;
+                _roles = null;
+                _actions = null;
+                _eventPayloads["Success"] = TRUE;
+                _event = EventEnum.SignOut;
+            }
+            catch (Exception ex)
+            {
+                _event = EventEnum.SignOut;
+                _eventPayloads["Success"] = FALSE;
+                _eventPayloads["Error"] = ex.ToString();
+            }
+        
             NotifyAll();
         }
 
