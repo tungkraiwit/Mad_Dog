@@ -164,7 +164,7 @@ namespace WerewolfClient
                         }
                         break;
                     case EventEnum.GameStopped:// end game Here
-                        AddChatMessage("Game is finished, outcome is " + wm.EventPayloads["Game.Outcome" + "\n" + "--------------------------------------------------------------"]);
+                        AddChatMessage("--------------------------------------------------------------" + "Game is finished, outcome is " + wm.EventPayloads["Game.Outcome"] + "\n" + "--------------------------------------------------------------");
                       
                         EnableButton(BtnAction, false);
                         EnableButton(BtnVote, false);

@@ -297,7 +297,7 @@ namespace WerewolfClient
                         _roles = null;
                         _actions = null;
                         _eventPayloads["Game.Outcome"] = _game.Outcome.ToString();
-                        _game = null;
+                       
                         _player.Role = null;
                         NotifyAll();
                     }
@@ -382,10 +382,10 @@ namespace WerewolfClient
                 InitilizeModel(server);
                 Player p = new Player(null, login, password, null, null, null, Player.StatusEnum.Offline);
                 _player = _playerEP.LoginPlayer(p);
-                //if(_player.Id  == null)
-                //{
-                //    throw new Exception("fail_signIn");
-                //}
+                if(_player.Id  == null)
+                {
+                    throw new Exception("fail_signIn");
+                }
                 Console.WriteLine(_player.Session);
                 _event = EventEnum.SignIn;
                 _eventPayloads["Success"] = TRUE;
@@ -405,10 +405,10 @@ namespace WerewolfClient
                 PlayerApi playerEP = new PlayerApi(server);
                 Player p = new Player(null, login, password, null, null, null, Player.StatusEnum.Offline);
                 _player = playerEP.AddPlayer(p);
-                //if(_player.Id != null)
-                //{
-                //    throw new Exception("fail_signUp");
-                //}
+                if(_player.Id != null)
+                {
+                    throw new Exception("fail_signUp");
+                }
                 Console.WriteLine(_player.Id);
                 _event = EventEnum.SignUp;
                 _eventPayloads["Success"] = TRUE;
