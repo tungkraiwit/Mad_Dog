@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using EventEnum = WerewolfClient.WerewolfModel.EventEnum;
 using CommandEnum = WerewolfClient.WerewolfCommand.CommandEnum;
 using WerewolfAPI.Model;
+using WMPLib;
 using Role = WerewolfAPI.Model.Role;
 
 namespace WerewolfClient
@@ -262,10 +263,7 @@ namespace WerewolfClient
                         LBPeriod.Text = "Day time of";
                         break;
                     case EventEnum.SwitchToNightTime:
-<<<<<<< HEAD
                         this.BackgroundImage = Properties.Resources.Dusk_resize_;
-=======
->>>>>>> parent of e71149b... almost complete
                         AddChatMessage("Switch to night time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Night;
                         LBPeriod.Text = "Night time of";
@@ -377,31 +375,6 @@ namespace WerewolfClient
                 _actionActivated = false;
             }
         }
-
-        private void BtnAction_Click(object sender, EventArgs e)
-        {
-            if (_isDead)
-            {
-                AddChatMessage("You're dead!!");
-               // if (_myRole == WerewolfModel.ROLE_WEREWOLF) Animation.Image = Properties.Resources.dead;
-                return;
-            }
-            if (_actionActivated)
-            {
-                BtnAction.BackColor = Button.DefaultBackColor;
-            }
-            else
-            {
-                BtnAction.BackColor = Color.Red;
-            }
-            _actionActivated = !_actionActivated;
-            if (_voteActivated)
-            {
-                BtnVote.BackColor = Button.DefaultBackColor;
-                _voteActivated = false;
-            }
-        }
-
         private void BtnPlayerX_Click(object sender, EventArgs e)
         {
             Button btnPlayer = (Button)sender;
@@ -447,6 +420,30 @@ namespace WerewolfClient
                 wcmd.Payloads = new Dictionary<string, string>() { { "Message", TbChatInput.Text } };
                 TbChatInput.Text = "";
                 controller.ActionPerformed(wcmd);
+            }
+        }
+
+        private void BtnAction_Click(object sender, EventArgs e)
+        {
+            if (_isDead)
+            {
+                AddChatMessage("You're dead!!");
+                // if (_myRole == WerewolfModel.ROLE_WEREWOLF) Animation.Image = Properties.Resources.dead;
+                return;
+            }
+            if (_actionActivated)
+            {
+                BtnAction.BackColor = Button.DefaultBackColor;
+            }
+            else
+            {
+                BtnAction.BackColor = Color.Red;
+            }
+            _actionActivated = !_actionActivated;
+            if (_voteActivated)
+            {
+                BtnVote.BackColor = Button.DefaultBackColor;
+                _voteActivated = false;
             }
         }
     }
