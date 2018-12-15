@@ -13,6 +13,7 @@ namespace WerewolfClient
     public partial class Login : Form, View
     {
         private WerewolfController controller;
+
         private Form _mainForm;
         public Login(Form MainForm)
         {
@@ -47,6 +48,19 @@ namespace WerewolfClient
                         {
                             MessageBox.Show("Fail sign up. Do it again later", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
+                        break;
+                    case WerewolfModel.EventEnum.SignOut:
+                        if (wm.EventPayloads["Success"] == WerewolfModel.FALSE)
+                        {
+                            MessageBox.Show("Fail sign out. Do it again later", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        else
+                        {
+                            _mainForm.Visible = false;
+                            this.Visible = true;
+
+                        }
+
                         break;
                 }
             }

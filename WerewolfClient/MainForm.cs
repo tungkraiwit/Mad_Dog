@@ -25,7 +25,9 @@ namespace WerewolfClient
         private bool _actionActivated;
         private string _myRole;
         private bool _isDead;
+        private Login _login;
         private List<Player> players = null;
+
         public MainForm()
         {
             InitializeComponent();
@@ -45,7 +47,7 @@ namespace WerewolfClient
             _myRole = null;
             _isDead = false;
         }
-
+    
         private void OnTimerEvent(object sender, EventArgs e)
         {
             WerewolfCommand wcmd = new WerewolfCommand();
@@ -272,11 +274,7 @@ namespace WerewolfClient
                             _isDead = false;
                         }
                         break;
-                    case EventEnum.signOut:
-
-                        break;
-                    
-                    case EventEnum.ChatMessage:
+                     case EventEnum.ChatMessage:
                         if (wm.EventPayloads["Success"] == WerewolfModel.TRUE)
                         {
                             AddChatMessage(wm.EventPayloads["Game.Chatter"] + ":" + wm.EventPayloads["Game.ChatMessage"]);
@@ -302,6 +300,7 @@ namespace WerewolfClient
                             }
                         }
                         break;
+                    
                 }
                 // need to reset event
                 wm.Event = EventEnum.NOP;
@@ -311,6 +310,13 @@ namespace WerewolfClient
         public void setController(Controller c)
         {
             controller = (WerewolfController)c;
+        }
+
+        private void BtnSignOut_Click(object sender, EventArgs e)
+        {
+            WerewolfCommand wcmd = new WerewolfCommand();
+            wcmd.Action = CommandEnum.SignOut;
+            controller.ActionPerformed(wcmd);
         }
 
         private void BtnJoin_Click(object sender, EventArgs e)
@@ -370,25 +376,32 @@ namespace WerewolfClient
                 // Nothing to do here;
                 return;
             }
-            if (_actionActivated)
+            try
             {
-                _actionActivated = false;
-                BtnAction.BackColor = Button.DefaultBackColor;
-                AddChatMessage("You perform [" + BtnAction.Text + "] on " + players[index].Name);
-                WerewolfCommand wcmd = new WerewolfCommand();
-                wcmd.Action = CommandEnum.Action;
-                wcmd.Payloads = new Dictionary<string, string>() { { "Target", players[index].Id.ToString() } };
-                controller.ActionPerformed(wcmd);
+                if (_actionActivated)
+                {
+                    _actionActivated = false;
+                    BtnAction.BackColor = Button.DefaultBackColor;
+                    AddChatMessage("You perform [" + BtnAction.Text + "] on " + players[index].Name);
+                    WerewolfCommand wcmd = new WerewolfCommand();
+                    wcmd.Action = CommandEnum.Action;
+                    wcmd.Payloads = new Dictionary<string, string>() { { "Target", players[index].Id.ToString() } };
+                    controller.ActionPerformed(wcmd);
+                }
+                if (_voteActivated)
+                {
+                    _voteActivated = false;
+                    BtnVote.BackColor = Button.DefaultBackColor;
+                    AddChatMessage("You vote on " + players[index].Name);
+                    WerewolfCommand wcmd = new WerewolfCommand();
+                    wcmd.Action = CommandEnum.Vote;
+                    wcmd.Payloads = new Dictionary<string, string>() { { "Target", players[index].Id.ToString() } };
+                    controller.ActionPerformed(wcmd);
+                }
             }
-            if (_voteActivated)
+            catch (Exception ex)
             {
-                _voteActivated = false;
-                BtnVote.BackColor = Button.DefaultBackColor;
-                AddChatMessage("You vote on " + players[index].Name);
-                WerewolfCommand wcmd = new WerewolfCommand();
-                wcmd.Action = CommandEnum.Vote;
-                wcmd.Payloads = new Dictionary<string, string>() { { "Target", players[index].Id.ToString() } };
-                controller.ActionPerformed(wcmd);
+                AddChatMessage("There isn't anybody here .");
             }
         }
 
