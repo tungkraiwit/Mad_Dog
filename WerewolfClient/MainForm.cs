@@ -25,7 +25,9 @@ namespace WerewolfClient
         private bool _actionActivated;
         private string _myRole;
         private bool _isDead;
+        private Login _login;
         private List<Player> players = null;
+
         public MainForm()
         {
             InitializeComponent();
@@ -45,7 +47,7 @@ namespace WerewolfClient
             _myRole = null;
             _isDead = false;
         }
-
+    
         private void OnTimerEvent(object sender, EventArgs e)
         {
             WerewolfCommand wcmd = new WerewolfCommand();
@@ -162,7 +164,7 @@ namespace WerewolfClient
                         }
                         break;
                     case EventEnum.GameStopped:// end game Here
-                        AddChatMessage("Game is finished, outcome is " + wm.EventPayloads["Game.Outcome"]);
+                        AddChatMessage("Game is finished, outcome is " + wm.EventPayloads["Game.Outcome" + "\n" + "--------------------------------------------------------------"]);
                       
                         EnableButton(BtnAction, false);
                         EnableButton(BtnVote, false);
@@ -172,7 +174,7 @@ namespace WerewolfClient
                     case EventEnum.GameStarted:
                         players = wm.Players;
                         _myRole = wm.EventPayloads["Player.Role.Name"];
-                        AddChatMessage("Your role is " + _myRole + ".");
+                        AddChatMessage("--------------------------------------------------------------" + "\n" + "Your role is " + _myRole + "." + "\n" + "--------------------------------------------------------------");
                         _currentPeriod = Game.PeriodEnum.Night;
                         EnableButton(BtnAction, true);
                         switch (_myRole)
@@ -217,14 +219,16 @@ namespace WerewolfClient
                         UpdateAvatar(wm);
                         break;
                     case EventEnum.SwitchToDayTime:
-                        AddChatMessage("Switch to day time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
+                        AddChatMessage("--------------------------------------------------------------" + "\n" + "Switch to day time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Day;
                         LBPeriod.Text = "Day time of";
+                        AddChatMessage("--------------------------------------------------------------");
                         break;
                     case EventEnum.SwitchToNightTime:
-                        AddChatMessage("Switch to night time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
+                        AddChatMessage("--------------------------------------------------------------" + "\n" + "Switch to night time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Night;
                         LBPeriod.Text = "Night time of";
+                        AddChatMessage("--------------------------------------------------------------");
                         break;
                     case EventEnum.UpdateDay:
                         // TODO  catch parse exception here
@@ -272,7 +276,7 @@ namespace WerewolfClient
                             _isDead = false;
                         }
                         break;
-                    case EventEnum.ChatMessage:
+                     case EventEnum.ChatMessage:
                         if (wm.EventPayloads["Success"] == WerewolfModel.TRUE)
                         {
                             AddChatMessage(wm.EventPayloads["Game.Chatter"] + ":" + wm.EventPayloads["Game.ChatMessage"]);
@@ -298,6 +302,7 @@ namespace WerewolfClient
                             }
                         }
                         break;
+                    
                 }
                 // need to reset event
                 wm.Event = EventEnum.NOP;
@@ -307,6 +312,13 @@ namespace WerewolfClient
         public void setController(Controller c)
         {
             controller = (WerewolfController)c;
+        }
+
+        private void BtnSignOut_Click(object sender, EventArgs e)
+        {
+            WerewolfCommand wcmd = new WerewolfCommand();
+            wcmd.Action = CommandEnum.SignOut;
+            controller.ActionPerformed(wcmd);
         }
 
         private void BtnJoin_Click(object sender, EventArgs e)
@@ -366,25 +378,32 @@ namespace WerewolfClient
                 // Nothing to do here;
                 return;
             }
-            if (_actionActivated)
+            try
             {
-                _actionActivated = false;
-                BtnAction.BackColor = Button.DefaultBackColor;
-                AddChatMessage("You perform [" + BtnAction.Text + "] on " + players[index].Name);
-                WerewolfCommand wcmd = new WerewolfCommand();
-                wcmd.Action = CommandEnum.Action;
-                wcmd.Payloads = new Dictionary<string, string>() { { "Target", players[index].Id.ToString() } };
-                controller.ActionPerformed(wcmd);
+                if (_actionActivated)
+                {
+                    _actionActivated = false;
+                    BtnAction.BackColor = Button.DefaultBackColor;
+                    AddChatMessage("You perform [" + BtnAction.Text + "] on " + players[index].Name);
+                    WerewolfCommand wcmd = new WerewolfCommand();
+                    wcmd.Action = CommandEnum.Action;
+                    wcmd.Payloads = new Dictionary<string, string>() { { "Target", players[index].Id.ToString() } };
+                    controller.ActionPerformed(wcmd);
+                }
+                if (_voteActivated)
+                {
+                    _voteActivated = false;
+                    BtnVote.BackColor = Button.DefaultBackColor;
+                    AddChatMessage("You vote on " + players[index].Name);
+                    WerewolfCommand wcmd = new WerewolfCommand();
+                    wcmd.Action = CommandEnum.Vote;
+                    wcmd.Payloads = new Dictionary<string, string>() { { "Target", players[index].Id.ToString() } };
+                    controller.ActionPerformed(wcmd);
+                }
             }
-            if (_voteActivated)
+            catch (Exception ex)
             {
-                _voteActivated = false;
-                BtnVote.BackColor = Button.DefaultBackColor;
-                AddChatMessage("You vote on " + players[index].Name);
-                WerewolfCommand wcmd = new WerewolfCommand();
-                wcmd.Action = CommandEnum.Vote;
-                wcmd.Payloads = new Dictionary<string, string>() { { "Target", players[index].Id.ToString() } };
-                controller.ActionPerformed(wcmd);
+                AddChatMessage("There isn't anybody here .");
             }
         }
 
