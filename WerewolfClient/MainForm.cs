@@ -86,6 +86,7 @@ namespace WerewolfClient
                     else
                     {
                         continue;
+
                     }
                     switch (role)
                     {
@@ -258,12 +259,13 @@ namespace WerewolfClient
                         UpdateAvatar(wm);
                         break;
                     case EventEnum.SwitchToDayTime:
+                        this.BackgroundImage = Properties.Resources.Dusk_resize_;
                         AddChatMessage("Switch to day time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Day;
                         LBPeriod.Text = "Day time of";
                         break;
                     case EventEnum.SwitchToNightTime:
-                        this.BackgroundImage = Properties.Resources.Dusk_resize_;
+                        this.BackgroundImage = Properties.Resources.WerewolfMoon_resize_;
                         AddChatMessage("Switch to night time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Night;
                         LBPeriod.Text = "Night time of";
@@ -428,7 +430,22 @@ namespace WerewolfClient
             if (_isDead)
             {
                 AddChatMessage("You're dead!!");
-                // if (_myRole == WerewolfModel.ROLE_WEREWOLF) Animation.Image = Properties.Resources.dead;
+                if (_myRole == WerewolfModel.ROLE_WEREWOLF) Animation.Image = Properties.Resources.Werewolf_died;
+                if (_myRole == WerewolfModel.ROLE_ALPHA_WEREWOLF) Animation.Image = Properties.Resources.AlphaWerewolf_dead;
+                if (_myRole == WerewolfModel.ROLE_BODYGUARD) Animation.Image = Properties.Resources.Bodyguard_died;
+                if (_myRole == WerewolfModel.ROLE_DOCTOR) Animation.Image = Properties.Resources.Doctor_died;
+                if (_myRole == WerewolfModel.ROLE_FOOL) Animation.Image = Properties.Resources.Fool_died;
+                if (_myRole == WerewolfModel.ROLE_GUNNER) Animation.Image = Properties.Resources.Gunner_died;
+                if (_myRole == WerewolfModel.ROLE_HEAD_HUNTER) Animation.Image = Properties.Resources.Headhunter_died;
+                if (_myRole == WerewolfModel.ROLE_JAILER) Animation.Image = Properties.Resources.Jailer_died;
+                if (_myRole == WerewolfModel.ROLE_MEDIUM) Animation.Image = Properties.Resources.Medium_died;
+                if (_myRole == WerewolfModel.ROLE_PRIEST) Animation.Image = Properties.Resources.Priest_died;
+                if (_myRole == WerewolfModel.ROLE_SEER) Animation.Image = Properties.Resources.Seer2_died;
+                if (_myRole == WerewolfModel.ROLE_SERIAL_KILLER) Animation.Image = Properties.Resources.SerialKiller_died;
+                if (_myRole == WerewolfModel.ROLE_WEREWOLF_SEER) Animation.Image = Properties.Resources.WolfSeer2_died;
+                if (_myRole == WerewolfModel.ROLE_WEREWOLF_SHAMAN) Animation.Image = Properties.Resources.WolfShaman_died;
+                Char_pic.Image = Properties.Resources.Null_resize_;
+                Animation.Image = Properties.Resources.Null_resize_;
                 return;
             }
             if (_actionActivated)

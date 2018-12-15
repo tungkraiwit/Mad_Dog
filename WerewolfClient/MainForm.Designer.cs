@@ -72,11 +72,12 @@
             this.GBChat.BackColor = System.Drawing.Color.Transparent;
             this.GBChat.Controls.Add(this.TbChatInput);
             this.GBChat.Controls.Add(this.TbChatBox);
-            this.GBChat.Location = new System.Drawing.Point(745, 379);
+            this.GBChat.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.GBChat.Location = new System.Drawing.Point(720, 355);
             this.GBChat.Margin = new System.Windows.Forms.Padding(4);
             this.GBChat.Name = "GBChat";
             this.GBChat.Padding = new System.Windows.Forms.Padding(4);
-            this.GBChat.Size = new System.Drawing.Size(416, 242);
+            this.GBChat.Size = new System.Drawing.Size(441, 287);
             this.GBChat.TabIndex = 2;
             this.GBChat.TabStop = false;
             this.GBChat.Text = "Chat";
@@ -84,10 +85,10 @@
             // TbChatInput
             // 
             this.TbChatInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbChatInput.Location = new System.Drawing.Point(8, 204);
+            this.TbChatInput.Location = new System.Drawing.Point(8, 249);
             this.TbChatInput.Margin = new System.Windows.Forms.Padding(4);
             this.TbChatInput.Name = "TbChatInput";
-            this.TbChatInput.Size = new System.Drawing.Size(390, 30);
+            this.TbChatInput.Size = new System.Drawing.Size(425, 30);
             this.TbChatInput.TabIndex = 1;
             this.TbChatInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbChatInput_Enter);
             // 
@@ -99,7 +100,7 @@
             this.TbChatBox.Multiline = true;
             this.TbChatBox.Name = "TbChatBox";
             this.TbChatBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TbChatBox.Size = new System.Drawing.Size(390, 173);
+            this.TbChatBox.Size = new System.Drawing.Size(425, 218);
             this.TbChatBox.TabIndex = 0;
             // 
             // GBAction
@@ -108,6 +109,7 @@
             this.GBAction.Controls.Add(this.BtnAction);
             this.GBAction.Controls.Add(this.BtnJoin);
             this.GBAction.Controls.Add(this.BtnVote);
+            this.GBAction.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.GBAction.Location = new System.Drawing.Point(741, 39);
             this.GBAction.Margin = new System.Windows.Forms.Padding(4);
             this.GBAction.Name = "GBAction";
@@ -161,6 +163,7 @@
             this.GBStatus.Controls.Add(this.LBPeriod);
             this.GBStatus.Controls.Add(this.label2);
             this.GBStatus.Controls.Add(this.label1);
+            this.GBStatus.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.GBStatus.Location = new System.Drawing.Point(741, 148);
             this.GBStatus.Margin = new System.Windows.Forms.Padding(4);
             this.GBStatus.Name = "GBStatus";
@@ -243,11 +246,11 @@
             this.GBPlayers.Controls.Add(this.BtnPlayer2);
             this.GBPlayers.Controls.Add(this.BtnPlayer1);
             this.GBPlayers.Controls.Add(this.BtnPlayer0);
-            this.GBPlayers.Location = new System.Drawing.Point(-8, -10);
+            this.GBPlayers.Location = new System.Drawing.Point(-8, -18);
             this.GBPlayers.Margin = new System.Windows.Forms.Padding(4);
             this.GBPlayers.Name = "GBPlayers";
             this.GBPlayers.Padding = new System.Windows.Forms.Padding(4);
-            this.GBPlayers.Size = new System.Drawing.Size(1182, 674);
+            this.GBPlayers.Size = new System.Drawing.Size(1182, 682);
             this.GBPlayers.TabIndex = 0;
             this.GBPlayers.TabStop = false;
             this.GBPlayers.Text = "Players";
@@ -509,6 +512,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1174, 655);
             this.Controls.Add(this.GBChat);
             this.Controls.Add(this.GBPlayers);

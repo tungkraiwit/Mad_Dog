@@ -253,6 +253,16 @@ namespace WerewolfClient.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dawn_resize_ {
+            get {
+                object obj = ResourceManager.GetObject("Dawn_resize_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Doctor_died {
             get {
                 object obj = ResourceManager.GetObject("Doctor_died", resourceCulture);
@@ -306,6 +316,16 @@ namespace WerewolfClient.Properties {
         internal static System.Drawing.Bitmap dog {
             get {
                 object obj = ResourceManager.GetObject("dog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dusk_resize_ {
+            get {
+                object obj = ResourceManager.GetObject("Dusk_resize_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -703,6 +723,16 @@ namespace WerewolfClient.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Noon_resize_ {
+            get {
+                object obj = ResourceManager.GetObject("Noon_resize_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Null_resize_ {
             get {
                 object obj = ResourceManager.GetObject("Null_resize_", resourceCulture);
@@ -906,6 +936,16 @@ namespace WerewolfClient.Properties {
         internal static System.Drawing.Bitmap Werewolf_use {
             get {
                 object obj = ResourceManager.GetObject("Werewolf_use", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WerewolfMoon_resize_ {
+            get {
+                object obj = ResourceManager.GetObject("WerewolfMoon_resize_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

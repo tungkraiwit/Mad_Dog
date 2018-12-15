@@ -120,6 +120,8 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\WerewolfMoon%28resize%29.png" />
+    <None Include="Resources\Noon%28resize%29.png" />
     <None Include="Resources\WolfShaman_use.png" />
     <None Include="Resources\WolfShaman_standby.gif" />
     <None Include="Resources\WolfShaman_died.gif" />
@@ -213,6 +215,8 @@
     <None Include="Resources\Headhunter_use.png" />
     <None Include="Resources\AlphaWerewolf_dead.gif" />
     <None Include="Resources\AlphaWerewolf_standby.gif" />
+    <None Include="Resources\Dawn%28resize%29.png" />
+    <None Include="Resources\Dusk%28resize%29.png" />
     <Content Include="Resources\Icon_alpha_werewolf.png" />
     <Content Include="Resources\Icon_aura_seer.png" />
     <Content Include="Resources\Icon_bodyguard.png" />
