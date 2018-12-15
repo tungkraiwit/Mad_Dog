@@ -33,7 +33,6 @@
             this.TbChatInput = new System.Windows.Forms.TextBox();
             this.TbChatBox = new System.Windows.Forms.TextBox();
             this.GBAction = new System.Windows.Forms.GroupBox();
-            this.BtnAction = new System.Windows.Forms.Button();
             this.BtnJoin = new System.Windows.Forms.Button();
             this.BtnVote = new System.Windows.Forms.Button();
             this.GBStatus = new System.Windows.Forms.GroupBox();
@@ -61,6 +60,7 @@
             this.BtnPlayer2 = new System.Windows.Forms.Button();
             this.BtnPlayer1 = new System.Windows.Forms.Button();
             this.BtnPlayer0 = new System.Windows.Forms.Button();
+            this.BtnAction = new System.Windows.Forms.Button();
             this.GBChat.SuspendLayout();
             this.GBAction.SuspendLayout();
             this.GBStatus.SuspendLayout();
@@ -72,12 +72,11 @@
             this.GBChat.BackColor = System.Drawing.Color.Transparent;
             this.GBChat.Controls.Add(this.TbChatInput);
             this.GBChat.Controls.Add(this.TbChatBox);
-            this.GBChat.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.GBChat.Location = new System.Drawing.Point(709, 373);
+            this.GBChat.Location = new System.Drawing.Point(745, 379);
             this.GBChat.Margin = new System.Windows.Forms.Padding(4);
             this.GBChat.Name = "GBChat";
             this.GBChat.Padding = new System.Windows.Forms.Padding(4);
-            this.GBChat.Size = new System.Drawing.Size(460, 288);
+            this.GBChat.Size = new System.Drawing.Size(416, 242);
             this.GBChat.TabIndex = 2;
             this.GBChat.TabStop = false;
             this.GBChat.Text = "Chat";
@@ -85,10 +84,10 @@
             // TbChatInput
             // 
             this.TbChatInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbChatInput.Location = new System.Drawing.Point(8, 249);
+            this.TbChatInput.Location = new System.Drawing.Point(8, 204);
             this.TbChatInput.Margin = new System.Windows.Forms.Padding(4);
             this.TbChatInput.Name = "TbChatInput";
-            this.TbChatInput.Size = new System.Drawing.Size(444, 30);
+            this.TbChatInput.Size = new System.Drawing.Size(390, 30);
             this.TbChatInput.TabIndex = 1;
             this.TbChatInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbChatInput_Enter);
             // 
@@ -100,7 +99,7 @@
             this.TbChatBox.Multiline = true;
             this.TbChatBox.Name = "TbChatBox";
             this.TbChatBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TbChatBox.Size = new System.Drawing.Size(444, 218);
+            this.TbChatBox.Size = new System.Drawing.Size(390, 173);
             this.TbChatBox.TabIndex = 0;
             // 
             // GBAction
@@ -109,8 +108,7 @@
             this.GBAction.Controls.Add(this.BtnAction);
             this.GBAction.Controls.Add(this.BtnJoin);
             this.GBAction.Controls.Add(this.BtnVote);
-            this.GBAction.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.GBAction.Location = new System.Drawing.Point(741, 23);
+            this.GBAction.Location = new System.Drawing.Point(741, 39);
             this.GBAction.Margin = new System.Windows.Forms.Padding(4);
             this.GBAction.Name = "GBAction";
             this.GBAction.Padding = new System.Windows.Forms.Padding(4);
@@ -119,21 +117,8 @@
             this.GBAction.TabStop = false;
             this.GBAction.Text = "Action";
             // 
-            // BtnAction
-            // 
-            this.BtnAction.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BtnAction.Location = new System.Drawing.Point(127, 22);
-            this.BtnAction.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnAction.Name = "BtnAction";
-            this.BtnAction.Size = new System.Drawing.Size(100, 57);
-            this.BtnAction.TabIndex = 10;
-            this.BtnAction.Text = "Action";
-            this.BtnAction.UseVisualStyleBackColor = true;
-            this.BtnAction.Click += new System.EventHandler(this.BtnAction_Click);
-            // 
             // BtnJoin
             // 
-            this.BtnJoin.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnJoin.Location = new System.Drawing.Point(20, 24);
             this.BtnJoin.Margin = new System.Windows.Forms.Padding(4);
             this.BtnJoin.Name = "BtnJoin";
@@ -145,7 +130,6 @@
             // 
             // BtnVote
             // 
-            this.BtnVote.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnVote.Location = new System.Drawing.Point(232, 23);
             this.BtnVote.Margin = new System.Windows.Forms.Padding(4);
             this.BtnVote.Name = "BtnVote";
@@ -163,8 +147,7 @@
             this.GBStatus.Controls.Add(this.LBPeriod);
             this.GBStatus.Controls.Add(this.label2);
             this.GBStatus.Controls.Add(this.label1);
-            this.GBStatus.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.GBStatus.Location = new System.Drawing.Point(717, 132);
+            this.GBStatus.Location = new System.Drawing.Point(741, 148);
             this.GBStatus.Margin = new System.Windows.Forms.Padding(4);
             this.GBStatus.Name = "GBStatus";
             this.GBStatus.Padding = new System.Windows.Forms.Padding(4);
@@ -226,7 +209,6 @@
             // GBPlayers
             // 
             this.GBPlayers.BackColor = System.Drawing.Color.Transparent;
-            this.GBPlayers.Controls.Add(this.GBChat);
             this.GBPlayers.Controls.Add(this.GBAction);
             this.GBPlayers.Controls.Add(this.GBStatus);
             this.GBPlayers.Controls.Add(this.Animation);
@@ -247,11 +229,11 @@
             this.GBPlayers.Controls.Add(this.BtnPlayer2);
             this.GBPlayers.Controls.Add(this.BtnPlayer1);
             this.GBPlayers.Controls.Add(this.BtnPlayer0);
-            this.GBPlayers.Location = new System.Drawing.Point(-8, -19);
+            this.GBPlayers.Location = new System.Drawing.Point(-8, -10);
             this.GBPlayers.Margin = new System.Windows.Forms.Padding(4);
             this.GBPlayers.Name = "GBPlayers";
             this.GBPlayers.Padding = new System.Windows.Forms.Padding(4);
-            this.GBPlayers.Size = new System.Drawing.Size(1182, 683);
+            this.GBPlayers.Size = new System.Drawing.Size(1182, 674);
             this.GBPlayers.TabIndex = 0;
             this.GBPlayers.TabStop = false;
             this.GBPlayers.Text = "Players";
@@ -275,10 +257,11 @@
             // Char_pic
             // 
             this.Char_pic.Image = ((System.Drawing.Image)(resources.GetObject("Char_pic.Image")));
-            this.Char_pic.Location = new System.Drawing.Point(907, 132);
+            this.Char_pic.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Char_pic.Location = new System.Drawing.Point(922, 157);
             this.Char_pic.Margin = new System.Windows.Forms.Padding(4);
             this.Char_pic.Name = "Char_pic";
-            this.Char_pic.Size = new System.Drawing.Size(254, 233);
+            this.Char_pic.Size = new System.Drawing.Size(173, 180);
             this.Char_pic.TabIndex = 17;
             this.Char_pic.Tag = "15";
             this.Char_pic.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -426,7 +409,6 @@
             // 
             // BtnPlayer5
             // 
-            this.BtnPlayer5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnPlayer5.Image = ((System.Drawing.Image)(resources.GetObject("BtnPlayer5.Image")));
             this.BtnPlayer5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnPlayer5.Location = new System.Drawing.Point(581, 174);
@@ -509,12 +491,22 @@
             this.BtnPlayer0.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer0.UseVisualStyleBackColor = true;
             // 
+            // BtnAction
+            // 
+            this.BtnAction.Location = new System.Drawing.Point(127, 22);
+            this.BtnAction.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnAction.Name = "BtnAction";
+            this.BtnAction.Size = new System.Drawing.Size(100, 57);
+            this.BtnAction.TabIndex = 10;
+            this.BtnAction.Text = "Action";
+            this.BtnAction.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1174, 644);
+            this.ClientSize = new System.Drawing.Size(1174, 655);
+            this.Controls.Add(this.GBChat);
             this.Controls.Add(this.GBPlayers);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";

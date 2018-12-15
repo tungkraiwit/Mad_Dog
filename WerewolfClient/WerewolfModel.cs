@@ -28,7 +28,7 @@ namespace WerewolfClient
         private List<Action> _playerActions = null;
         private Game.PeriodEnum? _currentPeriod;
         private int? _currentDay;
-        public int _currentTime;
+        private int _currentTime;
         private List<Player> _players = null;
         public List<Player> Players { get => _players; }
         private List<Player> _prevPlayers = null;

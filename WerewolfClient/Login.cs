@@ -7,20 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WMPLib;
 
 namespace WerewolfClient
 {
     public partial class Login : Form, View
     {
-        WindowsMediaPlayer player = new WindowsMediaPlayer();
         private WerewolfController controller;
         private Form _mainForm;
         public Login(Form MainForm)
         {
             InitializeComponent();
-            player.URL = "login.mp3";
-            player.controls.play();
             _mainForm = MainForm;
         }
 
@@ -34,7 +30,6 @@ namespace WerewolfClient
                     case WerewolfModel.EventEnum.SignIn:
                         if (wm.EventPayloads["Success"] == "True")
                         {
-                            player.controls.stop();
                             _mainForm.Visible = true;
                             this.Visible = false;
                         }

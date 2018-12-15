@@ -100,29 +100,8 @@
       <Name>WerewolfAPI</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <COMReference Include="AxWMPLib">
-      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>aximp</WrapperTool>
-      <Isolated>False</Isolated>
-    </COMReference>
-    <COMReference Include="WMPLib">
-      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\night.gif" />
-    <None Include="Resources\WerewolfMoon%28resize%29.png" />
-    <None Include="Resources\Noon%28resize%29.png" />
     <None Include="Resources\WolfShaman_use.png" />
     <None Include="Resources\WolfShaman_standby.gif" />
     <None Include="Resources\WolfShaman_died.gif" />
@@ -216,9 +195,6 @@
     <None Include="Resources\Headhunter_use.png" />
     <None Include="Resources\AlphaWerewolf_dead.gif" />
     <None Include="Resources\AlphaWerewolf_standby.gif" />
-    <None Include="Resources\Dawn%28resize%29.png" />
-    <None Include="Resources\Dusk%28resize%29.png" />
-    <None Include="Resources\day.gif" />
     <Content Include="Resources\Icon_alpha_werewolf.png" />
     <Content Include="Resources\Icon_aura_seer.png" />
     <Content Include="Resources\Icon_bodyguard.png" />

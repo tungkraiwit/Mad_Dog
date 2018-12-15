@@ -7,12 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WMPLib;
 using EventEnum = WerewolfClient.WerewolfModel.EventEnum;
 using CommandEnum = WerewolfClient.WerewolfCommand.CommandEnum;
 using WerewolfAPI.Model;
 using Role = WerewolfAPI.Model.Role;
-
 
 namespace WerewolfClient
 {
@@ -22,21 +20,16 @@ namespace WerewolfClient
         private WerewolfController controller;
         private Game.PeriodEnum _currentPeriod;
         private int _currentDay;
-        public int _currentTime;
+        private int _currentTime;
         private bool _voteActivated;
         private bool _actionActivated;
         private string _myRole;
         private bool _isDead;
         private List<Player> players = null;
-        WindowsMediaPlayer room = new WindowsMediaPlayer();
-        WindowsMediaPlayer ingame = new WindowsMediaPlayer();
         public MainForm()
         {
             InitializeComponent();
-            room.URL = "room.mp3";
-            ingame.URL = "ingame.mp3";
-            room.controls.stop();
-            ingame.controls.stop();
+
             foreach (int i in Enumerable.Range(0, 16))
             {
                 this.Controls["GBPlayers"].Controls["BtnPlayer" + i].Click += new System.EventHandler(this.BtnPlayerX_Click);
@@ -91,9 +84,6 @@ namespace WerewolfClient
                     }
                     else
                     {
-                        img = Properties.Resources.Null_resize_;
-                        Char_pic.Image = Properties.Resources.Null_resize_;
-                        Animation.Image = Properties.Resources.Null_resize_; 
                         continue;
                     }
                     switch (role)
@@ -194,7 +184,6 @@ namespace WerewolfClient
                     case EventEnum.JoinGame:
                         if (wm.EventPayloads["Success"] == WerewolfModel.TRUE)
                         {
-                            room.controls.play();
                             BtnJoin.Visible = false;
                             AddChatMessage("You're joing the game #" + wm.EventPayloads["Game.Id"] + ", please wait for game start.");
                             _updateTimer.Interval = 1000;
@@ -208,12 +197,9 @@ namespace WerewolfClient
                         break;
                     case EventEnum.GameStopped:
                         AddChatMessage("Game is finished, outcome is " + wm.EventPayloads["Game.Outcome"]);
-                        ingame.controls.stop();
                         _updateTimer.Enabled = false;
                         break;
                     case EventEnum.GameStarted:
-                        room.controls.stop();
-                        ingame.controls.play();
                         players = wm.Players;
                         _myRole = wm.EventPayloads["Player.Role.Name"];
                         AddChatMessage("Your role is " + _myRole + ".");
@@ -271,13 +257,15 @@ namespace WerewolfClient
                         UpdateAvatar(wm);
                         break;
                     case EventEnum.SwitchToDayTime:
-                        this.BackgroundImage = Properties.Resources.Dawn_resize_;
                         AddChatMessage("Switch to day time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Day;
                         LBPeriod.Text = "Day time of";
                         break;
                     case EventEnum.SwitchToNightTime:
+<<<<<<< HEAD
                         this.BackgroundImage = Properties.Resources.Dusk_resize_;
+=======
+>>>>>>> parent of e71149b... almost complete
                         AddChatMessage("Switch to night time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
                         _currentPeriod = Game.PeriodEnum.Night;
                         LBPeriod.Text = "Night time of";
@@ -389,6 +377,31 @@ namespace WerewolfClient
                 _actionActivated = false;
             }
         }
+
+        private void BtnAction_Click(object sender, EventArgs e)
+        {
+            if (_isDead)
+            {
+                AddChatMessage("You're dead!!");
+                if (_myRole == WerewolfModel.ROLE_WEREWOLF) Animation.Image = Properties.Resources.Werewolf_died;
+                return;
+            }
+            if (_actionActivated)
+            {
+                BtnAction.BackColor = Button.DefaultBackColor;
+            }
+            else
+            {
+                BtnAction.BackColor = Color.Red;
+            }
+            _actionActivated = !_actionActivated;
+            if (_voteActivated)
+            {
+                BtnVote.BackColor = Button.DefaultBackColor;
+                _voteActivated = false;
+            }
+        }
+
         private void BtnPlayerX_Click(object sender, EventArgs e)
         {
             Button btnPlayer = (Button)sender;
@@ -434,44 +447,6 @@ namespace WerewolfClient
                 wcmd.Payloads = new Dictionary<string, string>() { { "Message", TbChatInput.Text } };
                 TbChatInput.Text = "";
                 controller.ActionPerformed(wcmd);
-            }
-        }
-
-        private void BtnAction_Click(object sender, EventArgs e)
-        {
-            if (_isDead)
-            {
-                AddChatMessage("You're dead!!");
-                if (_myRole == WerewolfModel.ROLE_WEREWOLF) Animation.Image = Properties.Resources.Werewolf_died;
-                if (_myRole == WerewolfModel.ROLE_ALPHA_WEREWOLF) Animation.Image = Properties.Resources.AlphaWerewolf_dead;
-                if (_myRole == WerewolfModel.ROLE_AURA_SEER) Animation.Image = Properties.Resources.AuraSeer_died;
-                if (_myRole == WerewolfModel.ROLE_BODYGUARD) Animation.Image = Properties.Resources.Bodyguard_died;
-                if (_myRole == WerewolfModel.ROLE_DOCTOR) Animation.Image = Properties.Resources.Doctor_died;
-                if (_myRole == WerewolfModel.ROLE_FOOL) Animation.Image = Properties.Resources.Fool_died;
-                if (_myRole == WerewolfModel.ROLE_GUNNER) Animation.Image = Properties.Resources.Gunner_died;
-                if (_myRole == WerewolfModel.ROLE_HEAD_HUNTER) Animation.Image = Properties.Resources.Headhunter_died;
-                if (_myRole == WerewolfModel.ROLE_JAILER) Animation.Image = Properties.Resources.Jailer_died;
-                if (_myRole == WerewolfModel.ROLE_MEDIUM) Animation.Image = Properties.Resources.Medium_died;
-                if (_myRole == WerewolfModel.ROLE_PRIEST) Animation.Image = Properties.Resources.Priest_died;
-                if (_myRole == WerewolfModel.ROLE_SEER) Animation.Image = Properties.Resources.WolfSeer2_died;
-                if (_myRole == WerewolfModel.ROLE_SERIAL_KILLER) Animation.Image = Properties.Resources.SerialKiller_died;
-                if (_myRole == WerewolfModel.ROLE_WEREWOLF_SEER) Animation.Image = Properties.Resources.WolfSeer2_died;
-                if (_myRole == WerewolfModel.ROLE_WEREWOLF_SHAMAN) Animation.Image = Properties.Resources.WolfShaman_died;
-                return;
-            }
-            if (_actionActivated)
-            {
-                BtnAction.BackColor = Button.DefaultBackColor;
-            }
-            else
-            {
-                BtnAction.BackColor = Color.Red;
-            }
-            _actionActivated = !_actionActivated;
-            if (_voteActivated)
-            {
-                BtnVote.BackColor = Button.DefaultBackColor;
-                _voteActivated = false;
             }
         }
     }
