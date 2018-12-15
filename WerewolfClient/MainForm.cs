@@ -273,13 +273,12 @@ namespace WerewolfClient
                     case EventEnum.SwitchToDayTime:
                         this.BackgroundImage = Properties.Resources.Dawn_resize_;
                         AddChatMessage("Switch to day time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
-                        if (_currentPeriod == Game.PeriodEnum.Day) this.BackgroundImage = Properties.Resources.Noon_resize_;
+                        _currentPeriod = Game.PeriodEnum.Day;
                         LBPeriod.Text = "Day time of";
                         break;
                     case EventEnum.SwitchToNightTime:
-                        this.BackgroundImage = Properties.Resources.WerewolfMoon_resize_;
+                        this.BackgroundImage = Properties.Resources.Dusk_resize_;
                         AddChatMessage("Switch to night time of day #" + wm.EventPayloads["Game.Current.Day"] + ".");
-                        
                         _currentPeriod = Game.PeriodEnum.Night;
                         LBPeriod.Text = "Night time of";
                         break;
