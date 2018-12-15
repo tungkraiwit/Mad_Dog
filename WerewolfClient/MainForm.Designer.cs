@@ -73,11 +73,11 @@
             this.GBChat.Controls.Add(this.TbChatInput);
             this.GBChat.Controls.Add(this.TbChatBox);
             this.GBChat.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.GBChat.Location = new System.Drawing.Point(720, 355);
+            this.GBChat.Location = new System.Drawing.Point(720, 333);
             this.GBChat.Margin = new System.Windows.Forms.Padding(4);
             this.GBChat.Name = "GBChat";
             this.GBChat.Padding = new System.Windows.Forms.Padding(4);
-            this.GBChat.Size = new System.Drawing.Size(441, 287);
+            this.GBChat.Size = new System.Drawing.Size(441, 309);
             this.GBChat.TabIndex = 2;
             this.GBChat.TabStop = false;
             this.GBChat.Text = "Chat";
@@ -85,7 +85,7 @@
             // TbChatInput
             // 
             this.TbChatInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbChatInput.Location = new System.Drawing.Point(8, 249);
+            this.TbChatInput.Location = new System.Drawing.Point(8, 271);
             this.TbChatInput.Margin = new System.Windows.Forms.Padding(4);
             this.TbChatInput.Name = "TbChatInput";
             this.TbChatInput.Size = new System.Drawing.Size(425, 30);
@@ -100,7 +100,7 @@
             this.TbChatBox.Multiline = true;
             this.TbChatBox.Name = "TbChatBox";
             this.TbChatBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TbChatBox.Size = new System.Drawing.Size(425, 218);
+            this.TbChatBox.Size = new System.Drawing.Size(425, 240);
             this.TbChatBox.TabIndex = 0;
             // 
             // GBAction
@@ -135,6 +135,7 @@
             // 
             // BtnJoin
             // 
+            this.BtnJoin.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnJoin.Location = new System.Drawing.Point(20, 24);
             this.BtnJoin.Margin = new System.Windows.Forms.Padding(4);
             this.BtnJoin.Name = "BtnJoin";
@@ -146,6 +147,7 @@
             // 
             // BtnVote
             // 
+            this.BtnVote.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnVote.Location = new System.Drawing.Point(232, 23);
             this.BtnVote.Margin = new System.Windows.Forms.Padding(4);
             this.BtnVote.Name = "BtnVote";
@@ -262,7 +264,7 @@
             this.Animation.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Animation.Image = ((System.Drawing.Image)(resources.GetObject("Animation.Image")));
             this.Animation.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Animation.Location = new System.Drawing.Point(741, 266);
+            this.Animation.Location = new System.Drawing.Point(741, 257);
             this.Animation.Margin = new System.Windows.Forms.Padding(4);
             this.Animation.Name = "Animation";
             this.Animation.Size = new System.Drawing.Size(95, 99);
@@ -278,7 +280,7 @@
             this.Char_pic.Location = new System.Drawing.Point(922, 157);
             this.Char_pic.Margin = new System.Windows.Forms.Padding(4);
             this.Char_pic.Name = "Char_pic";
-            this.Char_pic.Size = new System.Drawing.Size(173, 180);
+            this.Char_pic.Size = new System.Drawing.Size(200, 188);
             this.Char_pic.TabIndex = 17;
             this.Char_pic.Tag = "15";
             this.Char_pic.TextAlign = System.Drawing.ContentAlignment.BottomCenter;

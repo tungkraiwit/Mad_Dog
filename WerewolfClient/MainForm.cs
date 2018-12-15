@@ -27,10 +27,15 @@ namespace WerewolfClient
         private string _myRole;
         private bool _isDead;
         private List<Player> players = null;
+        WindowsMediaPlayer room = new WindowsMediaPlayer();
+        WindowsMediaPlayer ingame = new WindowsMediaPlayer();
         public MainForm()
         {
             InitializeComponent();
-
+            room.URL = "room.mp3";
+            ingame.URL = "ingame.mp3";
+            room.controls.stop();
+            ingame.controls.stop();
             foreach (int i in Enumerable.Range(0, 16))
             {
                 this.Controls["GBPlayers"].Controls["BtnPlayer" + i].Click += new System.EventHandler(this.BtnPlayerX_Click);
@@ -186,6 +191,7 @@ namespace WerewolfClient
                     case EventEnum.JoinGame:
                         if (wm.EventPayloads["Success"] == WerewolfModel.TRUE)
                         {
+                            room.controls.play();
                             BtnJoin.Visible = false;
                             AddChatMessage("You're joing the game #" + wm.EventPayloads["Game.Id"] + ", please wait for game start.");
                             _updateTimer.Interval = 1000;
@@ -198,10 +204,13 @@ namespace WerewolfClient
                         }
                         break;
                     case EventEnum.GameStopped:
+                        ingame.controls.stop();
                         AddChatMessage("Game is finished, outcome is " + wm.EventPayloads["Game.Outcome"]);
                         _updateTimer.Enabled = false;
                         break;
                     case EventEnum.GameStarted:
+                        room.controls.stop();
+                        ingame.controls.play();
                         players = wm.Players;
                         _myRole = wm.EventPayloads["Player.Role.Name"];
                         AddChatMessage("Your role is " + _myRole + ".");
@@ -429,6 +438,8 @@ namespace WerewolfClient
         {
             if (_isDead)
             {
+                this.Char_pic.Image = Properties.Resources.Null_resize_;
+                this.Animation.Image = Properties.Resources.Null_resize_;
                 AddChatMessage("You're dead!!");
                 if (_myRole == WerewolfModel.ROLE_WEREWOLF) Animation.Image = Properties.Resources.Werewolf_died;
                 if (_myRole == WerewolfModel.ROLE_ALPHA_WEREWOLF) Animation.Image = Properties.Resources.AlphaWerewolf_dead;
@@ -444,8 +455,6 @@ namespace WerewolfClient
                 if (_myRole == WerewolfModel.ROLE_SERIAL_KILLER) Animation.Image = Properties.Resources.SerialKiller_died;
                 if (_myRole == WerewolfModel.ROLE_WEREWOLF_SEER) Animation.Image = Properties.Resources.WolfSeer2_died;
                 if (_myRole == WerewolfModel.ROLE_WEREWOLF_SHAMAN) Animation.Image = Properties.Resources.WolfShaman_died;
-                Char_pic.Image = Properties.Resources.Null_resize_;
-                Animation.Image = Properties.Resources.Null_resize_;
                 return;
             }
             if (_actionActivated)
