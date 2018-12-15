@@ -208,44 +208,44 @@ namespace WerewolfClient
                         switch (_myRole)
                         {
                             case WerewolfModel.ROLE_PRIEST:
-                                //BtnAction.Text = WerewolfModel.ACTION_HOLYWATER;
+                                BtnAction.Text = WerewolfModel.ACTION_HOLYWATER;
                                 BtnAction.Image = Properties.Resources.น้ำมน;
                                 break;
                             case WerewolfModel.ROLE_GUNNER:
-                               // BtnAction.Text = WerewolfModel.ACTION_SHOOT;
+                                BtnAction.Text = WerewolfModel.ACTION_SHOOT;
                                 BtnAction.Image = Properties.Resources.ยิง;
                                 break;
                             case WerewolfModel.ROLE_JAILER:
-                                //BtnAction.Text = WerewolfModel.ACTION_JAIL;
+                                BtnAction.Text = WerewolfModel.ACTION_JAIL;
                                 BtnAction.Image = Properties.Resources.ขัง;
                                 break;
                             case WerewolfModel.ROLE_WEREWOLF_SHAMAN:
-                                //BtnAction.Text = WerewolfModel.ACTION_ENCHANT;
+                                BtnAction.Text = WerewolfModel.ACTION_ENCHANT;
                                 BtnAction.Image = Properties.Resources.ใบ้;
                                 break;
                             case WerewolfModel.ROLE_BODYGUARD:
-                               // BtnAction.Text = WerewolfModel.ACTION_GUARD;
+                                BtnAction.Text = WerewolfModel.ACTION_GUARD;
                                 BtnAction.Image = Properties.Resources.คุ้มกัน;
                                 break;
                             case WerewolfModel.ROLE_DOCTOR:
-                                //BtnAction.Text = WerewolfModel.ACTION_HEAL;
+                                BtnAction.Text = WerewolfModel.ACTION_HEAL;
                                 BtnAction.Image = Properties.Resources.รักษา;
                                 break;
                             case WerewolfModel.ROLE_SERIAL_KILLER:
-                                //BtnAction.Text = WerewolfModel.ACTION_KILL;
+                                BtnAction.Text = WerewolfModel.ACTION_KILL;
                                 BtnAction.Image = Properties.Resources.ฆ่า;
                                 break;
                             case WerewolfModel.ROLE_SEER:
                             case WerewolfModel.ROLE_WEREWOLF_SEER:
-                                //BtnAction.Text = WerewolfModel.ACTION_REVEAL;
+                                BtnAction.Text = WerewolfModel.ACTION_REVEAL;
                                 BtnAction.Image = Properties.Resources.ตาหมา;
                                 break;
                             case WerewolfModel.ROLE_AURA_SEER:
-                                //BtnAction.Text = WerewolfModel.ACTION_AURA;
+                                BtnAction.Text = WerewolfModel.ACTION_AURA;
                                 BtnAction.Image = Properties.Resources.เซีย;
                                 break;
                             case WerewolfModel.ROLE_MEDIUM:
-                                //BtnAction.Text = WerewolfModel.ACTION_REVIVE;
+                                BtnAction.Text = WerewolfModel.ACTION_REVIVE;
                                 BtnAction.Image = Properties.Resources.ชุบ;
                                 break;
                             default:
@@ -379,7 +379,7 @@ namespace WerewolfClient
             if (_isDead)
             {
                 AddChatMessage("You're dead!!");
-               // if (_myRole == WerewolfModel.ROLE_WEREWOLF) Animation.Image = Properties.Resources.dead;
+                if (_myRole == WerewolfModel.ROLE_WEREWOLF) Animation.Image = Properties.Resources.Werewolf_died;
                 return;
             }
             if (_actionActivated)
@@ -410,8 +410,8 @@ namespace WerewolfClient
             if (_actionActivated)
             {
                 _actionActivated = false;
-             //   BtnAction.BackColor = Button.DefaultBackColor;
-             //   AddChatMessage("You perform [" + BtnAction.Text + "] on " + players[index].Name);
+                BtnAction.BackColor = Button.DefaultBackColor;
+                AddChatMessage("You perform [" + BtnAction.Text + "] on " + players[index].Name);
                 WerewolfCommand wcmd = new WerewolfCommand();
                 wcmd.Action = CommandEnum.Action;
                 wcmd.Payloads = new Dictionary<string, string>() { { "Target", players[index].Id.ToString() } };
